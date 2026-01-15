@@ -54,22 +54,80 @@ const components = {
     footer: `
     <footer class="site-footer">
         <div class="container">
-            <div class="row g-4 justify-content-between align-items-center">
-                <div class="col-lg-4 col-md-6 col-12 text-center text-md-start">
-        <img src="images/logo.png" alt="Bestow Group" height="50" id="nav-logo">                    <p class="mb-0">One-Stop Solution Partner for end-to-end people and business development.</p>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-12 text-center">
-                    <div class="d-flex flex-column gap-2">
-                        <a href="tel:8950336844" class="fs-5"><i class="fa fa-phone"></i> 8950336844</a>
-                        <p class="small opacity-75 mb-0">Contact us for immediate assistance</p>
+            <div class="row">
+                <!-- Company Info -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="pe-lg-5">
+                        <h4 class="mb-4 text-white fw-bold" style="letter-spacing: 1px;">BESTOW <span style="color: #38bdf8;">GROUP</span></h4>
+                        <p class="footer-text">One-Stop Solution Partner for end-to-end people and business development. Empowering professionals and businesses to archive their full potential with AI-driven strategies.</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon-btn"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="social-icon-btn"><i class="fa fa-linkedin"></i></a>
+                            <a href="#" class="social-icon-btn"><i class="fa fa-instagram"></i></a>
+                            <a href="#" class="social-icon-btn"><i class="fa fa-twitter"></i></a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-12 col-12 text-center text-lg-end">
-                    <p class="mb-2">&copy; 2026 <strong>Bestow Group</strong>. All Rights Reserved.</p>
-                    <div class="pt-2 border-top border-secondary border-opacity-25">
-                        <span class="small opacity-50 text-uppercase" style="font-size: 10px; letter-spacing: 2px;">Powered by Bestow Development India</span>
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html#coach">Suman Lata</a></li>
+                        <li><a href="double-your-profits.html">Growth Program</a></li>
+                        <li><a href="index.html#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Programs -->
+                <div class="col-lg-3 col-md-6 col-6">
+                    <h5 class="footer-title">Our Programs</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html#courses">AI Professional</a></li>
+                        <li><a href="index.html#courses">HR Generalist</a></li>
+                        <li><a href="index.html#courses">Accounts & Finance</a></li>
+                        <li><a href="index.html#courses">Sales & Marketing</a></li>
+                        <li><a href="index.html#courses">Leadership Coaching</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Get In Touch</h5>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fa fa-phone"></i>
+                            <div class="contact-content">
+                                <h6>Call / WhatsApp</h6>
+                                <p>8950336844</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa fa-envelope"></i>
+                            <div class="contact-content">
+                                <h6>Email Us</h6>
+                                <p>info@bestowgroup.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa fa-globe"></i>
+                            <div class="contact-content">
+                                <h6>Our Website</h6>
+                                <p>bestowgroup.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+                        <p class="mb-md-0">&copy; 2026 <strong>Bestow Group</strong>. All Rights Reserved.</p>
+                        <p class="mb-0">Powered by <a href="https://bestowindia.com" target="_blank">Bestow Development India</a></p>
                     </div>
                 </div>
             </div>
