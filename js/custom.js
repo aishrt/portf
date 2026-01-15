@@ -6,9 +6,9 @@ $(function () {
 
   // AOS ANIMATION
   AOS.init({
-    disable: "mobile",
     duration: 800,
-    anchorPlacement: "center-bottom",
+    once: true,
+    offset: 100,
   });
 });
 
