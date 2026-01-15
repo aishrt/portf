@@ -23,33 +23,35 @@
 }
 
 :root {
-  --primary-color: #f13a11;
+  --primary-color: #25477a;
+  --secondary-color: #1e3a63;
+  --accent-color: #f13a11;
   --white-color: #ffffff;
   --dark-color: #171819;
   --about-bg-color: #f9f9f9;
 
   --gray-color: #909090;
   --link-color: #404040;
-  --p-color: #666262;
+  --p-color: #444444;
 
-  --base-font-family: "Plain", sans-serif;
-  --font-weight-bold: bold;
-  --font-weight-normal: normal;
+  --base-font-family: 'Outfit', sans-serif;
+  --font-weight-bold: 700;
+  --font-weight-normal: 400;
   --font-weight-light: 300;
   --font-weight-thin: 100;
 
-  --h1-font-size: 48px;
-  --h2-font-size: 36px;
-  --h3-font-size: 28px;
-  --h4-font-size: 24px;
-  --h5-font-size: 22px;
+  --h1-font-size: 56px;
+  --h2-font-size: 42px;
+  --h3-font-size: 32px;
+  --h4-font-size: 26px;
+  --h5-font-size: 24px;
   --h6-font-size: 22px;
   --p-font-size: 18px;
   --base-font-size: 16px;
   --menu-font-size: 14px;
 
   --border-radius-large: 100%;
-  --border-radius-small: 2px;
+  --border-radius-small: 4px;
 }
 
 body {
@@ -201,15 +203,7 @@ a:focus {
 /* BG OVERLAY */
 
 .bg-overlay {
-  background: var(--dark-color);
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.85;
+  display: none;
 }
 .bg-overlaynew {
   background: var(--dark-color);
@@ -255,8 +249,9 @@ a:focus {
   */
 
 .navbar {
-  background: var(--dark-color);
+  background: var(--white-color);
   padding: 1rem;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -274,9 +269,9 @@ a:focus {
 
 .nav-item .nav-link {
   display: block;
-  color: var(--white-color);
+  color: var(--dark-color);
   font-size: var(--menu-font-size);
-  font-weight: var(--font-weight-normal);
+  font-weight: 500;
   text-transform: uppercase;
   padding: 2px 6px;
 }
@@ -287,7 +282,7 @@ a:focus {
 }
 
 .navbar .social-icon li a {
-  color: var(--white-color);
+  color: var(--primary-color);
 }
 
 .navbar-toggler {
@@ -362,13 +357,17 @@ a:focus {
   */
 
 .hero {
-  background-image: url("../images/backBack.jpg");
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
+  background: var(--white-color);
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   vertical-align: middle;
-  min-height: 100vh;
+  min-height: 80vh;
   position: relative;
+  padding: 100px 0;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
 }
 
 /*
@@ -377,10 +376,15 @@ a:focus {
 
 .class-info {
   background: var(--white-color);
-  box-shadow: 6px 0 38px rgba(20, 20, 20, 0.1);
-  border-radius: 0 0 2px 2px;
-  padding: 1rem 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  padding: 2rem;
   position: relative;
+  transition: transform 0.3s ease;
+}
+
+.class-info:hover {
+  transform: translateY(-10px);
 }
 
 .class-info img {
