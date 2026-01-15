@@ -129,6 +129,7 @@
     transform: translateY(10px);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     display: block !important; /* Managed by transition/opacity */
+    z-index: 10001 !important;
 }
 
 .nav-item.dropdown:hover .dropdown-menu {

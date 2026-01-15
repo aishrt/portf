@@ -56,9 +56,12 @@
   --shadow-hover: 0 20px 40px rgba(37, 71, 122, 0.2);
 }
 
+html,
 body {
   background: var(--white-color);
   font-family: var(--base-font-family);
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /*
