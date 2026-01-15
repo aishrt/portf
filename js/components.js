@@ -21,24 +21,18 @@ const components = {
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto ml-auto align-items-lg-center">
+                 
                     <li class="nav-item">
-                        <a href="index.html#home" class="nav-link smoothScroll">About Us</a>
+                        <a href="about.html" class="nav-link">About Us</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="index.html#about" class="nav-link smoothScroll">About Suman Lata</a>
+                        <a href="about.html#coach" class="nav-link">About Suman Lata</a>
                     </li>
                     
-                    <li class="nav-item">
-                        <a href="index.html#courses" class="nav-link smoothScroll">Courses</a>
-                    </li>
 
                     <li class="nav-item">
-                        <a href="double-your-profits.html" class="nav-link fw-bold text-danger">Profit Growth 2026</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="index.html#contact" class="nav-link smoothScroll btn-primary">Inquiry</a>
+                        <a href="about.html#enroll" class="nav-link btn-primary">Inquiry</a>
                     </li>
                 </ul>
             </div>
