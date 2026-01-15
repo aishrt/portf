@@ -21,29 +21,30 @@ const components = {
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto ml-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
                  
                     <li class="nav-item">
                         <a href="about.html" class="nav-link">About Us</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="about.html#coach" class="nav-link">About Suman Lata</a>
+                        <a href="about.html#coach" class="nav-link">Suman Lata</a>
                     </li>
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="programsDropdown">Programs</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="about.html#courses">AI Professional</a></li>
-                            <li><a class="dropdown-item" href="about.html#courses">HR Generalist</a></li>
-                            <li><a class="dropdown-item" href="about.html#courses">Accounts & Finance</a></li>
-                            <li><a class="dropdown-item" href="about.html#courses">Sales & Marketing</a></li>
+                            <li><a class="dropdown-item" href="index.html#courses">AI Professional</a></li>
+                          
                             <li><hr class="dropdown-divider mx-3 opacity-10"></li>
                             <li><a class="dropdown-item fw-bold text-danger" href="double-your-profits.html">Profit Growth 2026</a></li>
                         </ul>
                     </li>
                     
                     <li class="nav-item">
-                        <a href="about.html#enroll" class="nav-link btn-primary">Inquiry</a>
+                        <a href="index.html#contact" class="nav-link btn-primary">Inquiry</a>
                     </li>
                 </ul>
             </div>
