@@ -29,8 +29,19 @@ const components = {
                     <li class="nav-item">
                         <a href="about.html#coach" class="nav-link">About Suman Lata</a>
                     </li>
-                    
 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="programsDropdown">Programs</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html#courses">AI Professional</a></li>
+                            <li><a class="dropdown-item" href="about.html#courses">HR Generalist</a></li>
+                            <li><a class="dropdown-item" href="about.html#courses">Accounts & Finance</a></li>
+                            <li><a class="dropdown-item" href="about.html#courses">Sales & Marketing</a></li>
+                            <li><hr class="dropdown-divider mx-3 opacity-10"></li>
+                            <li><a class="dropdown-item fw-bold text-danger" href="double-your-profits.html">Profit Growth 2026</a></li>
+                        </ul>
+                    </li>
+                    
                     <li class="nav-item">
                         <a href="about.html#enroll" class="nav-link btn-primary">Inquiry</a>
                     </li>
@@ -45,8 +56,7 @@ const components = {
         <div class="container">
             <div class="row g-4 justify-content-between align-items-center">
                 <div class="col-lg-4 col-md-6 col-12 text-center text-md-start">
-                    <img src="images/logo.png" alt="Bestow Group" height="50" class="mb-3" style="filter: brightness(0) invert(1);">
-                    <p class="mb-0">One-Stop Solution Partner for end-to-end people and business development.</p>
+        <img src="images/logo.png" alt="Bestow Group" height="50" id="nav-logo">                    <p class="mb-0">One-Stop Solution Partner for end-to-end people and business development.</p>
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-12 text-center">
