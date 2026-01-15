@@ -160,22 +160,35 @@
 }
 
 .site-footer {
-  border-top: 1px solid #efebeb;
-  padding: 3rem 0;
-  background: var(--white-color);
+  border-top: 1px solid rgba(255,255,255,0.05);
+  padding: 4rem 0 2rem;
+  background: #0f172a; /* Deep dark blue for professional look */
+  color: #94a3b8;
+}
+
+.site-footer h5, .site-footer strong {
+    color: #ffffff;
 }
 
 .site-footer a {
-  color: var(--p-color);
-  font-weight: var(--font-weight-light);
+  color: #ffffff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+    color: #38bdf8;
 }
 
 .site-footer p {
-  font-size: var(--base-font-size);
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .site-footer .fa {
-  color: var(--primary-color);
+  color: #38bdf8;
+  margin-right: 8px;
 }
 
 .social-icon {

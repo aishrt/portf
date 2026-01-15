@@ -49,24 +49,25 @@ const components = {
     footer: `
     <footer class="site-footer">
         <div class="container">
-            <div class="row g-4 align-items-center">
+            <div class="row g-4 justify-content-between align-items-center">
                 <div class="col-lg-4 col-md-6 col-12 text-center text-md-start">
-                    <img src="images/logo.png" alt="Bestow Group" height="40" class="mb-3">
-                    <p class="small text-muted">One-Stop Solution Partner for end-to-end people and business development.</p>
+                    <img src="images/logo.png" alt="Bestow Group" height="50" class="mb-3" style="filter: brightness(0) invert(1);">
+                    <p class="mb-0">One-Stop Solution Partner for end-to-end people and business development.</p>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-12 text-center">
-                    <div class="mb-3">
-                        <a href="tel:8950336844" class="text-decoration-none text-dark fw-bold"><i class="fa fa-phone me-2 text-primary"></i> 8950336844</a>
+                <div class="col-lg-3 col-md-6 col-12 text-center">
+                    <div class="d-flex flex-column gap-2">
+                        <a href="tel:8950336844" class="fs-5"><i class="fa fa-phone"></i> 8950336844</a>
+                        <p class="small opacity-75 mb-0">Contact us for immediate assistance</p>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-12 col-12 text-center text-lg-end">
-                    <p class="copyright-text small mb-0">&copy; 2026 <strong>Bestow Group</strong>.
-                        <br><span class="opacity-50 text-uppercase" style="font-size: 10px; letter-spacing: 1px;">Powered by Bestow Development India</span>
-                    </p>
+                    <p class="mb-2">&copy; 2026 <strong>Bestow Group</strong>. All Rights Reserved.</p>
+                    <div class="pt-2 border-top border-secondary border-opacity-25">
+                        <span class="small opacity-50 text-uppercase" style="font-size: 10px; letter-spacing: 2px;">Powered by Bestow Development India</span>
+                    </div>
                 </div>
-
             </div>
         </div>
     </footer>
