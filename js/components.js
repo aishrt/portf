@@ -21,10 +21,7 @@ const components = {
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto ml-auto align-items-lg-center">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                 
+           
                     <li class="nav-item">
                         <a href="about.html" class="nav-link">About Us</a>
                     </li>
