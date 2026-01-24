@@ -1,213 +1,349 @@
 :root {
-    --lp-primary: #1a3a6c;
-    --lp-secondary: #f13a11;
-    --lp-bg-dark: #0f172a;
-    --lp-bg-light: #f8fafc;
-    --lp-glass: rgba(255, 255, 255, 0.1);
-    --lp-glass-border: rgba(255, 255, 255, 0.2);
-    --lp-accent: #38bdf8;
+  --lp-primary: #1a3a6c;
+  --lp-secondary: #f13a11;
+  --lp-bg-dark: #0f172a;
+  --lp-bg-light: #f8fafc;
+  --lp-glass: rgba(255, 255, 255, 0.1);
+  --lp-glass-border: rgba(255, 255, 255, 0.2);
+  --lp-accent: #38bdf8;
 }
 
-.lp-body {
-    font-family: 'Outfit', sans-serif;
-    color: #334155;
-    background-color: var(--lp-bg-light);
-    overflow-x: hidden;
+html,
+body {
+  font-family: "Outfit", sans-serif;
+  color: #334155;
+  background-color: var(--lp-bg-light);
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
 }
 
 .lp-hero {
-    position: relative;
-    padding: 120px 0 160px;
-    background: linear-gradient(135deg, var(--lp-primary) 0%, #0c1e3a 100%);
-    color: white;
-    overflow: hidden;
+  position: relative;
+  padding: 120px 0 160px;
+  background: linear-gradient(135deg, var(--lp-primary) 0%, #0c1e3a 100%);
+  color: white;
+  overflow: hidden;
 }
 
 .lp-hero::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100px;
-    background: var(--lp-bg-light);
-    clip-path: polygon(0 100%, 100% 100%, 100% 0);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: var(--lp-bg-light);
+  clip-path: polygon(0 100%, 100% 100%, 100% 0);
 }
 
 .lp-headline {
-    font-size: 4rem;
-    font-weight: 800;
-    line-height: 1.1;
-    margin-bottom: 1.5rem;
-    background: linear-gradient(to right, #fff, var(--lp-accent));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to right, #fff, var(--lp-accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .lp-subheadline {
-    font-size: 1.5rem;
-    opacity: 0.9;
-    margin-bottom: 2.5rem;
-    font-weight: 300;
+  font-size: 1.5rem;
+  opacity: 0.9;
+  margin-bottom: 2.5rem;
+  font-weight: 300;
 }
 
 .lp-btn {
-    padding: 18px 40px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    border-radius: 50px;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  padding: 18px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .lp-btn-primary {
-    background: var(--lp-secondary);
-    color: white;
-    border: none;
-    box-shadow: 0 10px 25px rgba(241, 58, 17, 0.3);
+  background: var(--lp-secondary);
+  color: white;
+  border: none;
+  box-shadow: 0 10px 25px rgba(241, 58, 17, 0.3);
 }
 
 .lp-btn-primary:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(241, 58, 17, 0.5);
-    color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(241, 58, 17, 0.5);
+  color: white;
 }
 
 .lp-card {
-    background: white;
-    border-radius: 24px;
-    padding: 1.5rem;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
-    border: 1px solid rgba(0,0,0,0.03);
-    transition: all 0.3s ease;
+  background: white;
+  border-radius: 24px;
+  padding: 1.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
 }
 
 .lp-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
 }
 
 .lp-glass-card {
-    background: var(--lp-glass);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid var(--lp-glass-border);
-    border-radius: 20px;
-    padding: 2rem;
+  background: var(--lp-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--lp-glass-border);
+  border-radius: 20px;
+  padding: 2rem;
 }
 
 .lp-section-title {
-    font-size: 3rem;
-    font-weight: 800;
-    color: var(--lp-primary);
-    margin-bottom: 1rem;
-    text-align: center;
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: var(--lp-primary);
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .lp-section-subtitle {
-    text-align: center;
-    font-size: 1.25rem;
-    color: #64748b;
-    margin-bottom: 4rem;
+  text-align: center;
+  font-size: 1.25rem;
+  color: #64748b;
+  margin-bottom: 4rem;
 }
 
 .lp-list-item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
 }
 
 .lp-list-icon {
-    background: rgba(241, 58, 17, 0.1);
-    color: var(--lp-secondary);
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 12px;
-    flex-shrink: 0;
-    margin-top: 3px;
-    font-size: 0.8rem;
+  background: rgba(241, 58, 17, 0.1);
+  color: var(--lp-secondary);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  flex-shrink: 0;
+  margin-top: 3px;
+  font-size: 0.8rem;
 }
 
 .lp-table {
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
 }
 
 .lp-table thead th {
-    background: var(--lp-primary);
-    color: white;
-    padding: 20px;
-    border: none;
-    font-weight: 600;
+  background: var(--lp-primary);
+  color: white;
+  padding: 20px;
+  border: none;
+  font-weight: 600;
 }
 
 .lp-table tbody td {
-    padding: 20px;
-    vertical-align: middle;
+  padding: 20px;
+  vertical-align: middle;
 }
 
 .lp-comparison-highlight {
-    background: rgba(56, 189, 248, 0.05);
-    font-weight: 600;
-    color: var(--lp-primary);
+  background: rgba(56, 189, 248, 0.05);
+  font-weight: 600;
+  color: var(--lp-primary);
 }
 
 .lp-form-container {
-    background: white;
-    padding: 3.5rem;
-    border-radius: 30px;
-    box-shadow: 0 40px 80px rgba(0,0,0,0.1);
+  background: white;
+  padding: 3.5rem;
+  border-radius: 30px;
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.1);
 }
 
 .lp-form-control {
-    border: 2px solid #e2e8f0;
-    padding: 15px 20px;
-    border-radius: 12px;
-    margin-bottom: 1.5rem;
-    transition: all 0.3s ease;
+  border: 2px solid #e2e8f0;
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
 }
 
 .lp-form-control:focus {
-    border-color: var(--lp-accent);
-    box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.1);
-    outline: none;
+  border-color: var(--lp-accent);
+  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.1);
+  outline: none;
 }
 
 .lp-footer {
-    background: var(--lp-bg-dark);
-    color: white;
-    padding: 80px 0 40px;
+  background: var(--lp-bg-dark);
+  color: white;
+  padding: 80px 0 40px;
 }
 
 .lp-stat-number {
-    font-size: 3.5rem;
-    font-weight: 800;
-    color: var(--lp-secondary);
-    display: block;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--lp-secondary);
+  display: block;
 }
 
 .lp-stat-label {
-    font-size: 1.1rem;
-    color: #94a3b8;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  font-size: 1.1rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-@media (max-width: 768px) {
-    .lp-headline {
-        font-size: 2.5rem;
-    }
-    .lp-section-title {
-        font-size: 2rem;
-    }
-    .lp-form-container {
-        padding: 2rem;
-    }
+@media (max-width: 991px) {
+  .lp-hero {
+    padding: 100px 0 120px;
+    text-align: center;
+  }
+
+  .lp-headline {
+    font-size: 2.75rem;
+  }
+
+  .lp-subheadline {
+    font-size: 1.25rem;
+  }
+
+  .lp-hero .d-flex {
+    justify-content: center;
+  }
+
+  .lp-stat-number {
+    font-size: 2.5rem;
+  }
+
+  .lp-section-title {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .lp-hero {
+    padding: 120px 0 80px; /* Increased top padding to clear fixed navbar */
+  }
+
+  /* Prevent content from touching screen edges and fix row overflow */
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    overflow: hidden;
+  }
+
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Fix badge overflow */
+  .badge {
+    white-space: normal !important;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .lp-headline {
+    font-size: 1.5rem; /* ~24px */
+    margin-bottom: 0.8rem;
+    color: #ffffff; /* Fallback for older browsers */
+    -webkit-text-fill-color: #ffffff; /* Ensure visibility */
+  }
+
+  .lp-headline span {
+    background: none !important;
+    -webkit-text-fill-color: var(--lp-accent) !important;
+    text-fill-color: var(--lp-accent) !important;
+  }
+
+  .lp-headline br {
+    display: none;
+  }
+
+  .lp-subheadline {
+    font-size: 0.875rem; /* ~14px */
+    margin-bottom: 1.5rem;
+  }
+
+  .lp-hero .d-flex.flex-wrap {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .lp-btn {
+    padding: 12px 15px !important;
+    font-size: 0.85rem !important;
+    width: auto !important;
+    flex: 1;
+    margin-bottom: 0px !important;
+    white-space: nowrap !important;
+  }
+
+  .lp-section-title {
+    font-size: 1.85rem;
+    text-align: center !important;
+  }
+
+  .lp-section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .lp-form-container {
+    padding: 1.5rem;
+  }
+
+  .py-5 {
+    padding: 3rem 0 !important;
+  }
+
+  .lp-card {
+    padding: 1.25rem;
+  }
+
+  /* Fix for Career Opportunities text wrapping */
+  .text-nowrap {
+    white-space: normal !important;
+  }
+
+  .lp-hero img {
+    max-height: 350px !important;
+    margin-top: 30px;
+  }
+
+  .lp-stat-number {
+    font-size: 1.8rem !important;
+  }
+
+  .lp-stat-label {
+    font-size: 0.75rem !important;
+    color: #94a3b8;
+  }
+}
+
+@media (max-width: 480px) {
+  .lp-headline {
+    font-size: 1.4rem; /* ~22px */
+  }
+
+  .lp-subheadline {
+    font-size: 0.85rem; /* ~13.6px */
+  }
+
+  .lp-stat-number {
+    font-size: 2rem;
+  }
 }

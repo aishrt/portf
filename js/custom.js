@@ -1,7 +1,12 @@
 $(function () {
   // MENU
-  $(document).on("click", ".navbar-collapse a", function () {
-    $(".navbar-collapse").collapse("hide");
+  // MENU AUTO-CLOSE ON LINK CLICK (Including dropdown items)
+  $(document).on("click", ".navbar-collapse a:not(.dropdown-toggle), .dropdown-item", function () {
+    const navbarCollapse = document.getElementById("navbarNav");
+    if (navbarCollapse && window.innerWidth < 992 && typeof bootstrap !== "undefined") {
+      const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse) || new bootstrap.Collapse(navbarCollapse, { toggle: false });
+      bsCollapse.hide();
+    }
   });
 
   // AOS ANIMATION

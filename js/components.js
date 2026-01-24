@@ -14,34 +14,36 @@ const components = {
                 <img src="images/logo.png" alt="Bestow Group" height="50" id="nav-logo">
             </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto ml-auto align-items-lg-center">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
            
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link">About Us</a>
+                        <a href="about.html" class="nav-link">ABOUT US</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="about.html#coach" class="nav-link">Suman Lata</a>
+                        <a href="about.html#coach" class="nav-link">SUMAN LATA</a>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="programsDropdown">Programs</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            PROGRAMS
+                        </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="index.html#courses">AI Professional</a></li>
                           
                             <li><hr class="dropdown-divider mx-3 opacity-10"></li>
-                            <li><a class="dropdown-item fw-bold text-danger" href="double-your-profits.html">Profit Growth 2026</a></li>
+                            <li><a class="dropdown-item fw-bold text-danger" href="double-your-profits.html">PROFIT GROWTH 2026</a></li>
                         </ul>
                     </li>
                     
                     <li class="nav-item">
-                        <a href="index.html#contact" class="nav-link btn-primary">Inquiry</a>
+                        <a href="index.html#contact" class="nav-link btn-primary">INQUIRY</a>
                     </li>
                 </ul>
             </div>
@@ -140,6 +142,21 @@ document.addEventListener("DOMContentLoaded", function () {
     if (headerPlaceholder) {
         headerPlaceholder.innerHTML = components.header;
         highlightActiveLink();
+
+        // MANUALLY INITIALIZE BOOTSTRAP COMPONENTS (Required for dynamic injection)
+        const navbarToggler = headerPlaceholder.querySelector('.navbar-toggler');
+        const navbarCollapse = headerPlaceholder.querySelector('.navbar-collapse');
+        const dropdownToggles = headerPlaceholder.querySelectorAll('.dropdown-toggle');
+
+        if (navbarToggler && navbarCollapse && typeof bootstrap !== 'undefined') {
+            new bootstrap.Collapse(navbarCollapse, { toggle: false });
+        }
+
+        if (dropdownToggles.length > 0 && typeof bootstrap !== 'undefined') {
+            dropdownToggles.forEach(toggle => {
+                new bootstrap.Dropdown(toggle);
+            });
+        }
 
         // Scroll listener for professional sticky effect
         const navbar = document.getElementById('main-navbar');
