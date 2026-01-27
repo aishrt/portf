@@ -59,7 +59,7 @@ const components = {
                 <div class="col-lg-4 col-md-6">
                     <div class="pe-lg-5">
                         <h4 class="mb-4 text-white fw-bold" style="letter-spacing: 1px;">BESTOW <span style="color: #38bdf8;">GROUP</span></h4>
-                        <p class="footer-text">One-Stop Solution Partner for end-to-end people and business development. Empowering professionals and businesses to archive their full potential with AI-driven strategies.</p>
+                        <p class="footer-text">One-Stop Solution Partner and a trusted coach for end-to-end people and business development. We help people and organizations scale sustainably, improve performance, and build future-ready capabilities.</p>
                         <div class="social-icons">
                             <a href="#" class="social-icon-btn"><i class="fa fa-facebook"></i></a>
                             <a href="#" class="social-icon-btn"><i class="fa fa-linkedin"></i></a>
