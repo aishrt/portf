@@ -21,87 +21,273 @@
     <link rel="stylesheet" href="css/main.css"> <!-- Reusing some main styles if needed -->
 
     <style>
+        body {
+            background: #ffffff;
+            font-family: 'Outfit', sans-serif;
+            color: #1e293b;
+            line-height: 1.7;
+        }
+
         .about-hero {
             background: linear-gradient(135deg, #0f172a 0%, #1e3a63 100%);
-            padding: 160px 0 100px;
+            padding: 140px 0 80px;
             color: white;
             position: relative;
-            overflow: hidden;
         }
 
-        .about-hero::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 50%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.03);
-            clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+        .page-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
         }
 
-        .section-accent {
-            color: var(--primary-color);
+        .page-title {
+            font-size: 32px;
             font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            display: block;
-            margin-bottom: 10px;
+            color: #0f172a;
+            margin-bottom: 30px;
+            text-align: left;
         }
 
-        .profile-img-card {
+        .intro-text {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #334155;
+            margin-bottom: 30px;
+        }
+
+        .intro-text strong {
+            color: #0f172a;
+            font-weight: 600;
+        }
+
+        .guarantee-box {
+            background: #f8fafc;
+            border-left: 4px solid var(--primary-color);
+            padding: 25px 30px;
+            margin: 30px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .guarantee-box p {
+            margin-bottom: 15px;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        .guarantee-box ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 15px;
+        }
+
+        .guarantee-box li {
+            padding-left: 25px;
             position: relative;
-            display: inline-block;
+            margin-bottom: 8px;
+            font-size: 15px;
         }
 
-        .profile-img-card img {
-            border-radius: 40px;
-            border: 12px solid white;
-            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.15);
-        }
-
-        .experience-badge {
+        .guarantee-box li:before {
+            content: "•";
             position: absolute;
-            bottom: -30px;
-            right: -10px;
-            background: #f13a11;
-            color: white;
-            padding: 25px;
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(241, 58, 17, 0.3);
-            text-align: center;
+            left: 8px;
+            color: var(--primary-color);
+            font-weight: bold;
         }
 
-        .focus-card {
-            transition: all 0.4s ease;
-            height: 100%;
-            border: none;
-            border-radius: 30px;
-            padding: 40px;
-            background: #fff;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+        .section-heading {
+            font-size: 22px;
+            font-weight: 700;
+            color: #0f172a;
+            margin: 40px 0 20px;
         }
 
-        .focus-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+        .content-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 30px;
         }
 
-        .opportunity-tag {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 8px 15px;
-            border-radius: 50px;
-            display: inline-block;
-            margin: 5px;
-            font-size: 14px;
+        @media (max-width: 768px) {
+            .content-columns {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .content-box {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 30px;
             transition: all 0.3s ease;
         }
 
-        .opportunity-tag:hover {
-            background: var(--primary-color);
+        .content-box:hover {
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            border-color: rgba(241, 58, 17, 0.3);
+        }
+
+        .content-box h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 20px;
+        }
+
+        .content-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .content-box li {
+            padding-left: 25px;
+            position: relative;
+            margin-bottom: 12px;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #475569;
+        }
+
+        .content-box li:before {
+            content: "•";
+            position: absolute;
+            left: 8px;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .enrollment-section {
+            background: #f8fafc;
+            border-radius: 16px;
+            padding: 50px;
+            margin-top: 60px;
+        }
+
+        .enrollment-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        @media (max-width: 768px) {
+            .enrollment-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .contact-info {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .contact-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .contact-item i {
+            font-size: 24px;
+            color: var(--primary-color);
+            margin-right: 15px;
+            width: 30px;
+        }
+
+        .contact-item .info {
+            flex: 1;
+        }
+
+        .contact-item .label {
+            font-size: 12px;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
+        .contact-item .value {
+            font-size: 16px;
+            font-weight: 600;
+            color: #0f172a;
+        }
+
+        .form-container {
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: #334155;
+            margin-bottom: 8px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .form-input:focus {
+            outline: none;
             border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(241, 58, 17, 0.1);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background: var(--primary-color);
             color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background: #d63310;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(241, 58, 17, 0.3);
         }
     </style>
 </head>
@@ -126,196 +312,128 @@
         </div>
     </section>
 
-    <!-- COMPANY OVERVIEW -->
-    <section class="py-5 bg-white">
-        <div class="container py-5">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <span class="section-accent">Innovating People & Processes</span>
-                    <h2 class="mb-4 display-5 fw-bold text-dark">Develop People . Grow Business . Build the Nation</h2>
-                    <p class="mb-4 lead">People are the true differentiator that sets one organization apart from
-                        another. Our approach combines deep industry expertise, structured frameworks, and advanced
-                        AI-driven methodologies.</p>
-                    <p class="text-muted mb-5">We help people and organizations scale sustainably, improve performance,
-                        and build future-ready capabilities. Whether you are a student, a working professional, or a
-                        business owner, we have tailored tracks for your growth.</p>
+    <!-- MAIN CONTENT -->
+    <div class="page-container">
 
-                    <div class="row g-4">
-                        <div class="col-6">
-                            <div class="p-4 rounded-4 bg-light border-start border-primary border-5">
-                                <h3 class="h2 fw-bold text-primary mb-1">01.</h3>
-                                <p class="mb-0 fw-bold">People Development</p>
-                            </div>
+
+        <div class="guarantee-box">
+            <ul>
+                <li>People development</li>
+                <li>Business development</li>
+            </ul>
+        </div>
+
+        <!-- PEOPLE & BUSINESS DEVELOPMENT -->
+        <div class="content-columns" id="services" style="margin-top: 40px;">
+            <div class="content-box">
+                <h3>1. People Development</h3>
+                <p style="margin-bottom: 15px; color: #64748b; font-size: 14px;">We partner with individuals at every
+                    stage of the talent lifecycle—students, professionals, and promoters</p>
+                <ul>
+                    <li><strong>Students:</strong> Behavioral coaching, Courses in AI tools, HR and Talent Acquisitions,
+                        Accounts & Finance and sales & Marketing.</li>
+                    <li><strong>Working Professionals:</strong> Empowering self-growth to step confidently into the next
+                        level in their personal and professional journey.</li>
+                    <li><strong>Promoters / Business Owners:</strong> Coaching businesses to achieve the next level of
+                        growth.</li>
+                </ul>
+                <p style="margin-top: 15px; font-size: 13px; color: #64748b;">Our people development programs focus on
+                    capability building, leadership development, and performance enhancement, enabling individuals to
+                    grow along with the organization.</p>
+            </div>
+
+            <div class="content-box">
+                <h3>2. Business Development</h3>
+                <p style="margin-bottom: 15px; color: #64748b; font-size: 14px;">We partner with organizations to coach
+                    and support them in:</p>
+                <ul>
+                    <li>Strategic Business Consulting</li>
+                    <li>Talent Acquisitions & Leadership Coaching</li>
+                    <li>Business Development & Growth Enablement</li>
+                    <li>Business Transformation</li>
+                    <li>AI-enabled Business Solutions</li>
+                    <li>Organizational Restructuring powered by AI tools</li>
+                </ul>
+                <p style="margin-top: 15px; font-size: 13px; color: #64748b;">By integrating people-centric thinking,
+                    business strategy, and AI-driven solutions, we help organizations build strong teams, transform
+                    operations, and achieve sustainable growth.</p>
+            </div>
+        </div>
+
+        <!-- ENROLLMENT SECTION -->
+        <div class="enrollment-section" id="enroll">
+            <h2 class="section-heading" style="margin-top: 0;">Inquiry / Enrollment</h2>
+            <p style="color: #64748b; margin-bottom: 30px;">Limited seats available for upcoming batches. Secure your
+                future and stay ahead of the curve.</p>
+
+            <div class="enrollment-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fa fa-phone"></i>
+                        <div class="info">
+                            <div class="label">Call / WhatsApp</div>
+                            <div class="value">8950336844</div>
                         </div>
-                        <div class="col-6">
-                            <div class="p-4 rounded-4 bg-light border-start border-primary border-5">
-                                <h3 class="h2 fw-bold text-primary mb-1">02.</h3>
-                                <p class="mb-0 fw-bold">Business Development</p>
-                            </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa fa-globe"></i>
+                        <div class="info">
+                            <div class="label">Website</div>
+                            <div class="value">bestowgroup.com</div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa fa-info-circle"></i>
+                        <div class="info">
+                            <div class="label">Batch Status</div>
+                            <div class="value" style="font-size: 14px;">Limited seats • New batch starting soon</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="p-5 rounded-5 shadow-2xl bg-white position-relative">
-                        <div
-                            class="quote-icon position-absolute top-0 start-0 translate-middle p-4 bg-primary text-white rounded-circle">
-                            <i class="fa fa-quote-left h4 mb-0"></i>
+
+                <div class="form-container">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label class="form-label">Course Applied For</label>
+                            <select class="form-input" name="course">
+                                <option value="">Select a Course</option>
+                                <option>AI Professional for Business & Analytics</option>
+                                <option>HR Generalist with AI & Payroll</option>
+                                <option>Accounting & Finance with AI</option>
+                                <option>Sales and Marketing with AI</option>
+                            </select>
                         </div>
-                        <p class="fs-4 italic text-dark mb-0">"Our mission is to empower students, professionals and
-                            entrepreneurs
-                            with AI-driven growth to achieve measurable business outcomes in an evolving environment."
-                        </p>
-                    </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="form-input" placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Contact Number</label>
+                                <input type="tel" class="form-input" placeholder="8950336844">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Email ID</label>
+                                <input type="email" class="form-input" placeholder="you@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Qualification</label>
+                                <input type="text" class="form-input" placeholder="Your Degree">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Location with Aadhaar No</label>
+                            <textarea class="form-input" rows="3"
+                                placeholder="Enter Full location and Aadhaar details"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit Application</button>
+                    </form>
                 </div>
             </div>
         </div>
-    </section>
-
-
-
-    <!-- KEY SERVICE AREAS -->
-    <section class="py-5 bg-white" id="services">
-        <div class="container py-5">
-            <div class="text-center mb-5" data-aos="fade-up">
-                <span class="section-accent">Our Core Expertise</span>
-                <h2 class="display-5 fw-bold">Primary Areas of Focus</h2>
-            </div>
-
-            <div class="row g-4">
-                <!-- People Development -->
-                <div class="col-lg-6" data-aos="fade-right">
-                    <div class="focus-card">
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="icon-box-small me-3 bg-primary text-white" style="width: 60px; height: 60px;">
-                                <i class="fa fa-users h3 mb-0"></i>
-                            </div>
-                            <h3 class="mb-0 fw-bold">1. People Development</h3>
-                        </div>
-                        <p class="mb-4">We partner with individuals at every stage of the talent lifecycle—students,
-                            professionals, and promoters</p>
-                        <ul class="list-unstyled custom-list-2">
-                            <li class="mb-3">
-                                <i class="fa fa-dot-circle-o text-primary me-2"></i>
-                                <span>● Students- Behavioral coaching, Courses in AI tools , HR and Talent Acquisitions,
-                                    Accounts & Finance and sales & Marketing.</span>
-                            </li>
-                            <li class="mb-3">
-                                <i class="fa fa-dot-circle-o text-primary me-2"></i>
-                                <span>● Working Professionals: Empowering self-growth to step confidently into the next
-                                    level in their personal and professional journey.</span>
-                            </li>
-                            <li class="mb-3">
-                                <i class="fa fa-dot-circle-o text-primary me-2"></i>
-                                <span>● Promoters / Business Owners: Coaching businesses to achieve the next level of
-                                    growth.</span>
-                            </li>
-                        </ul>
-                        <p class="mt-4">Our people development programs focus on capability building, leadership
-                            development, and performance enhancement, enabling individuals to grow along with the
-                            organization.</p>
-                    </div>
-                </div>
-
-                <!-- Business Development -->
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="focus-card">
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="icon-box-small me-3 bg-danger text-white" style="width: 60px; height: 60px;">
-                                <i class="fa fa-line-chart h3 mb-0"></i>
-                            </div>
-                            <h3 class="mb-0 fw-bold">2. Business Development</h3>
-                        </div>
-                        <p class="mb-4">We partner with organizations to coach and support them in:</p>
-                        <ul class="list-unstyled custom-list-2">
-                            <li class="mb-2"><i class="fa fa-dot-circle-o text-danger me-2"></i> ● Strategic Business
-                                Consulting</li>
-                            <li class="mb-2"><i class="fa fa-dot-circle-o text-danger me-2"></i> ● Talent Acquisitions &
-                                Leadership Coaching</li>
-                            <li class="mb-2"><i class="fa fa-dot-circle-o text-danger me-2"></i> ● Business Development
-                                & Growth Enablement</li>
-                            <li class="mb-2"><i class="fa fa-dot-circle-o text-danger me-2"></i> ● Business
-                                Transformation</li>
-                            <li class="mb-2"><i class="fa fa-dot-circle-o text-danger me-2"></i> ● AI-enabled Business
-                                Solutions</li>
-                            <li class="mb-2"><i class="fa fa-dot-circle-o text-danger me-2"></i> ● Organizational
-                                Restructuring powered by AI tools</li>
-                        </ul>
-                        <p class="mt-4">By integrating people-centric thinking, business strategy, and AI-driven
-                            solutions, we help organizations build strong teams, transform operations, and achieve
-                            sustainable growth.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ENROLLMENT FORM -->
-    <section class="py-5" id="enroll">
-        <div class="container py-5">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-5" data-aos="fade-right">
-                    <h2 class="display-5 fw-bold mb-4">Inquiry / Enrollment</h2>
-                    <p class="mb-4">Limited seats available for upcoming batches. Secure your future and stay ahead
-                        of
-                        the curve.</p>
-
-                    <div class="p-4 rounded-4 bg-primary text-white shadow-lg mb-4">
-                        <h4 class="mb-3">🎯 INQUARIY :</h4>
-                        <p class="mb-2"><strong>Name, Contact No, Email id</strong></p>
-                        <p class="mb-2"><i class="fa fa-phone me-2"></i> Call /WhatsApp @ 8950336844</p>
-                        <p class="mb-2"><i class="fa fa-globe me-2"></i> bestowgroup.com</p>
-                        <h4 class="mt-4 mb-2">🎯 ENROLL NOW:</h4>
-                        <p class="mb-2">📩 Limited seats available</p>
-                        <p class="mb-0">📆 New batch starting soon</p>
-                    </div>
-                </div>
-                <div class="col-lg-7" data-aos="fade-left">
-                    <div class="p-5 rounded-5 shadow-2xl bg-white border-top border-primary border-5">
-                        <form action="#" method="post">
-                            <div class="row g-3">
-                                <div class="col-12 mb-3">
-                                    <label class="form-label fw-bold">Course Applied For</label>
-                                    <select class="form-select form-control-modern" name="course">
-                                        <option value="">Select a Course</option>
-                                        <option>AI Professional for Business & Analytics</option>
-                                        <option>HR Generalist with AI & Payroll</option>
-                                        <option>Accounting & Finance with AI</option>
-                                        <option>Sales and Marketing with AI</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label class="form-label fw-bold">Full Name</label>
-                                    <input type="text" class="form-control form-control-modern" placeholder="John Doe">
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label class="form-label fw-bold">Contact Number</label>
-                                    <input type="tel" class="form-control form-control-modern" placeholder="8950336844">
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label class="form-label fw-bold">Email ID</label>
-                                    <input type="email" class="form-control form-control-modern"
-                                        placeholder="you@example.com">
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label class="form-label fw-bold">Qualification</label>
-                                    <input type="text" class="form-control form-control-modern" placeholder="">
-                                </div>
-                                <div class="col-12 mb-3">
-                                    <label class="form-label fw-bold">Address with Aadhaar No</label>
-                                    <textarea class="form-control form-control-modern" rows="3"
-                                        placeholder="Enter Full Address and Aadhaar details"></textarea>
-                                </div>
-                                <div class="col-12 mt-4">
-                                    <button type="submit" class="btn custom-btn bg-color w-100 py-3 shadow-lg">Submit
-                                        Application</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
 
     <!-- FOOTER PLACEHOLDER -->
     <div id="footer-placeholder"></div>

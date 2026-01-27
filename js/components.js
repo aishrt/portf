@@ -22,17 +22,19 @@ const components = {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-lg-center">
            
+                     <li class="nav-item">
+                        <a href="about.html#coach" class="nav-link">SUMAN LATA</a>
+                    </li>
+                    
                     <li class="nav-item">
                         <a href="about.html" class="nav-link">ABOUT US</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a href="about.html#coach" class="nav-link">SUMAN LATA</a>
-                    </li>
+                  
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            PROGRAMS
+                            PRATICAL LEARNING PROGRAMS
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="index.html#courses">AI Professional</a></li>
@@ -40,6 +42,9 @@ const components = {
                             <li><hr class="dropdown-divider mx-3 opacity-10"></li>
                             <li><a class="dropdown-item fw-bold text-danger" href="double-your-profits.html">PROFIT GROWTH 2026</a></li>
                         </ul>
+                    </li>
+                       <li class="nav-item">
+                        <a href="about.html" class="nav-link">WORKSHOP</a>
                     </li>
                     
                     <li class="nav-item">
