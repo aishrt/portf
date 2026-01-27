@@ -61,45 +61,43 @@ const components = {
         <div class="container">
             <div class="row">
                 <!-- Company Info -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="pe-lg-5">
-                        <h4 class="mb-4 text-white fw-bold" style="letter-spacing: 1px;">BESTOW <span style="color: #38bdf8;">GROUP</span></h4>
-                        <p class="footer-text">One-Stop Solution Partner and a trusted coach for end-to-end people and business development. We help people and organizations scale sustainably, improve performance, and build future-ready capabilities.</p>
-                        <div class="social-icons">
-                            <a href="#" class="social-icon-btn"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="social-icon-btn"><i class="fa fa-linkedin"></i></a>
-                            <a href="#" class="social-icon-btn"><i class="fa fa-instagram"></i></a>
-                            <a href="#" class="social-icon-btn"><i class="fa fa-twitter"></i></a>
-                        </div>
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <h4 class="mb-4 text-white fw-bold" style="letter-spacing: 1px;">BESTOW <span style="color: #38bdf8;">GROUP</span></h4>
+                    <p class="footer-text">One-Stop Solution Partner and a trusted coach for end-to-end people and business development. We help people and organizations scale sustainably, improve performance, and build future-ready capabilities.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon-btn"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="social-icon-btn"><i class="fa fa-linkedin"></i></a>
+                        <a href="#" class="social-icon-btn"><i class="fa fa-instagram"></i></a>
+                        <a href="#" class="social-icon-btn"><i class="fa fa-twitter"></i></a>
                     </div>
                 </div>
 
                 <!-- Quick Links -->
-                <div class="col-lg-2 col-md-6 col-6">
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4 mb-lg-0">
                     <h5 class="footer-title">Quick Links</h5>
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="about.html#coach">Suman Lata</a></li>
+                        <li><a href="index.html">Suman Lata</a></li>
                         <li><a href="double-your-profits.html">Growth Program</a></li>
-                        <li><a href="index.html#contact">Contact Us</a></li>
+                        <li><a href="about.html#enroll">Contact Us</a></li>
                     </ul>
                 </div>
 
                 <!-- Programs -->
-                <div class="col-lg-3 col-md-6 col-6">
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4 mb-lg-0">
                     <h5 class="footer-title">Our Programs</h5>
                     <ul class="footer-links">
-                        <li><a href="index.html#courses">AI Professional</a></li>
-                        <li><a href="index.html#courses">HR Generalist</a></li>
-                        <li><a href="index.html#courses">Accounts & Finance</a></li>
-                        <li><a href="index.html#courses">Sales & Marketing</a></li>
-                        <li><a href="index.html#courses">Leadership Coaching</a></li>
+                        <li><a href="double-your-profits.html">AI Professional</a></li>
+                        <li><a href="double-your-profits.html">HR Generalist</a></li>
+                        <li><a href="double-your-profits.html">Accounts & Finance</a></li>
+                        <li><a href="double-your-profits.html">Sales & Marketing</a></li>
+                        <li><a href="workshops.html">Workshops</a></li>
                     </ul>
                 </div>
 
                 <!-- Contact Info -->
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-4 col-sm-12">
                     <h5 class="footer-title">Get In Touch</h5>
                     <div class="contact-info">
                         <div class="contact-item">
