@@ -23,7 +23,7 @@ const components = {
                 <ul class="navbar-nav ms-auto align-items-lg-center">
            
                      <li class="nav-item">
-                        <a href="about.html#coach" class="nav-link">SUMAN LATA</a>
+                        <a href="INDEX.html" class="nav-link">SUMAN LATA</a>
                     </li>
                     
                     <li class="nav-item">
@@ -34,7 +34,7 @@ const components = {
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            PRATICAL LEARNING PROGRAMS
+                            PRACTICAL LEARNING PROGRAMS
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="index.html#courses">AI Professional</a></li>
@@ -44,11 +44,11 @@ const components = {
                         </ul>
                     </li>
                        <li class="nav-item">
-                        <a href="about.html" class="nav-link">WORKSHOP</a>
+                        <a href="workshops.html" class="nav-link">WORKSHOP</a>
                     </li>
                     
                     <li class="nav-item">
-                        <a href="index.html#contact" class="nav-link btn-primary">INQUIRY</a>
+                        <a href="about.html#enroll" class="nav-link btn-primary">INQUIRY</a>
                     </li>
                 </ul>
             </div>

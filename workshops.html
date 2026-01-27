@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Workshops | Bestow Group - Empowering Professionals with AI-Driven Growth</title>
+    <meta name="description"
+        content="Join our transformative workshops on People Development, Team Development, and Business Growth Programs led by Coach Suman Lata.">
+
+    <!-- External CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+
+    <style>
+        /* Workshop Page Specific Styles */
+        .workshops-hero {
+            background: linear-gradient(135deg, #25477a 0%, #1e3a63 100%);
+            padding: 140px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .workshops-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .workshops-hero h1 {
+            color: white;
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            text-transform: none;
+        }
+
+        .workshops-hero p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .workshop-card {
+            background: white;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .workshop-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 60px rgba(37, 71, 122, 0.2);
+        }
+
+        .workshop-header {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 2rem;
+            position: relative;
+            border-bottom: 3px solid var(--primary-color);
+        }
+
+        .workshop-badge {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+        }
+
+        .workshop-badge.coming-soon {
+            background: #f13a11;
+        }
+
+        .workshop-badge.available {
+            background: #10b981;
+        }
+
+        .workshop-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+
+        .workshop-subtitle {
+            color: #64748b;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        .workshop-body {
+            padding: 2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .workshop-description {
+            color: #475569;
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .workshop-details {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .detail-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            font-size: 0.95rem;
+        }
+
+        .detail-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .detail-icon {
+            width: 36px;
+            height: 36px;
+            background: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            color: var(--primary-color);
+            flex-shrink: 0;
+        }
+
+        .detail-content {
+            flex-grow: 1;
+        }
+
+        .detail-label {
+            font-weight: 600;
+            color: var(--dark-color);
+            display: block;
+            font-size: 0.85rem;
+            margin-bottom: 2px;
+        }
+
+        .detail-value {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        .workshop-footer {
+            padding: 0 2rem 2rem;
+        }
+
+        .workshop-btn {
+            width: 100%;
+            padding: 14px 24px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            border: none;
+        }
+
+        .workshop-btn-primary {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+        }
+
+        .workshop-btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(37, 71, 122, 0.3);
+            color: white;
+        }
+
+        .workshop-btn-secondary {
+            background: white;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .workshop-btn-secondary:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .workshop-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .workshop-btn:disabled:hover {
+            transform: none;
+            box-shadow: none;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .empty-state-icon {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            font-size: 3rem;
+            color: var(--primary-color);
+        }
+
+        .empty-state h3 {
+            color: var(--dark-color);
+            margin-bottom: 1rem;
+        }
+
+        .empty-state p {
+            color: #64748b;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .workshops-hero h1 {
+                font-size: 2.25rem;
+            }
+
+            .workshops-hero p {
+                font-size: 1.1rem;
+            }
+
+            .workshop-title {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER PLACEHOLDER -->
+    <div id="header-placeholder"></div>
+
+    <!-- WORKSHOPS HERO -->
+    <section class="workshops-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 data-aos="fade-up">Workshops</h1>
+                    <p data-aos="fade-up" data-aos-delay="200">
+                        Empowering Professionals and Entrepreneurs with AI-Driven Growth through PEOPLE Development
+                        Programs, TEAM Development & BUSINESS Growth Programs
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORKSHOPS SECTION -->
+    <section class="section">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Workshop Card 1 - Example Template -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="workshop-card">
+                        <div class="workshop-header">
+                            <span class="workshop-badge coming-soon">Coming Soon</span>
+                            <h3 class="workshop-title">Leadership Excellence Workshop</h3>
+                            <p class="workshop-subtitle">Transform Your Leadership Skills</p>
+                        </div>
+                        <div class="workshop-body">
+                            <p class="workshop-description">
+                                Discover the secrets of effective leadership in the AI era. This intensive workshop
+                                will equip you with cutting-edge strategies to lead high-performing teams and drive
+                                organizational success.
+                            </p>
+                            <div class="workshop-details">
+                                <div class="detail-item">
+                                    <div class="detail-icon">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                    <div class="detail-content">
+                                        <span class="detail-label">Date</span>
+                                        <span class="detail-value">To Be Announced</span>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <div class="detail-icon">
+                                        <i class="fa fa-map-marker"></i>
+                                    </div>
+                                    <div class="detail-content">
+                                        <span class="detail-label">Location</span>
+                                        <span class="detail-value">To Be Announced</span>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <div class="detail-icon">
+                                        <i class="fa fa-clock-o"></i>
+                                    </div>
+                                    <div class="detail-content">
+                                        <span class="detail-label">Duration</span>
+                                        <span class="detail-value">2 Days Intensive</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="workshop-footer">
+                            <button class="workshop-btn workshop-btn-secondary" disabled>
+                                <i class="fa fa-bell me-2"></i>Notify Me
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Workshop Card 2 - Example Template -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="workshop-card">
+                        <div class="workshop-header">
+                            <span class="workshop-badge coming-soon">Coming Soon</span>
+                            <h3 class="workshop-title">AI-Powered Business Growth</h3>
+                            <p class="workshop-subtitle">Scale Your Business with AI</p>
+                        </div>
+                        <div class="workshop-body">
+                            <p class="workshop-description">
+                                Learn how to leverage artificial intelligence to accelerate your business growth.
+                                Practical strategies for automation, data-driven decision making, and competitive
+                                advantage.
+                            </p>
+                            <div class="workshop-details">
+                                <div class="detail-item">
+                                    <div class="detail-icon">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                    <div class="detail-content">
+                                        <span class="detail-label">Date</span>
+                                        <span class="detail-value">To Be Announced</span>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <div class="detail-icon">
+                                        <i class="fa fa-map-marker"></i>
+                                    </div>
+                                    <div class="detail-content">
+                                        <span class="detail-label">Location</span>
+                                        <span class="detail-value">To Be Announced</span>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <div class="detail-icon">
+                                        <i class="fa fa-clock-o"></i>
+                                    </div>
+                                    <div class="detail-content">
+                                        <span class="detail-label">Duration</span>
+                                        <span class="detail-value">3 Days Intensive</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="workshop-footer">
+                            <button class="workshop-btn workshop-btn-secondary" disabled>
+                                <i class="fa fa-bell me-2"></i>Notify Me
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Workshop Card 3 - Example Template -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="workshop-card">
+                        <div class="workshop-header">
+                            <span class="workshop-badge coming-soon">Coming Soon</span>
+                            <h3 class="workshop-title">Team Building & Collaboration</h3>
+                            <p class="workshop-subtitle">Build High-Performance Teams</p>
+                        </div>
+                        <div class="workshop-body">
+                            <p class="workshop-description">
+                                Master the art of building cohesive, high-performing teams. Learn proven techniques for
+                                fostering collaboration, trust, and productivity in modern work environments.
+                            </p>
+                            <div class="workshop-details">
+                                <div class="detail-item">
+                                    <div class="detail-icon">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                    <div class="detail-content">
+                                        <span class="detail-label">Date</span>
+                                        <span class="detail-value">To Be Announced</span>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <div class="detail-icon">
+                                        <i class="fa fa-map-marker"></i>
+                                    </div>
+                                    <div class="detail-content">
+                                        <span class="detail-label">Location</span>
+                                        <span class="detail-value">To Be Announced</span>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <div class="detail-icon">
+                                        <i class="fa fa-clock-o"></i>
+                                    </div>
+                                    <div class="detail-content">
+                                        <span class="detail-label">Duration</span>
+                                        <span class="detail-value">1 Day Workshop</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="workshop-footer">
+                            <button class="workshop-btn workshop-btn-secondary" disabled>
+                                <i class="fa fa-bell me-2"></i>Notify Me
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Empty State for Future Updates -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="empty-state" data-aos="fade-up">
+                        <div class="empty-state-icon">
+                            <i class="fa fa-calendar-plus-o"></i>
+                        </div>
+                        <h3>More Workshops Coming Soon!</h3>
+                        <p>
+                            We're constantly developing new workshops to help you grow. Stay tuned for upcoming
+                            sessions on People Development, Team Excellence, and Business Growth. For inquiries or
+                            custom workshop requests, please contact us.
+                        </p>
+                        <div class="mt-4">
+                            <a href="index.html#contact" class="btn custom-btn bg-color me-3">
+                                <i class="fa fa-envelope me-2"></i>Contact Us
+                            </a>
+                            <a href="about.html" class="btn custom-btn bordered">
+                                <i class="fa fa-info-circle me-2"></i>Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER PLACEHOLDER -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
