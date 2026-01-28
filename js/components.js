@@ -48,7 +48,7 @@ const components = {
                     </li>
                     
                     <li class="nav-item">
-                        <a href="about.html#enroll" class="nav-link btn-primary">INQUIRY</a>
+                        <a href="enroll.html" class="nav-link btn-primary">INQUIRY</a>
                     </li>
                 </ul>
             </div>
@@ -80,7 +80,7 @@ const components = {
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="index.html">Suman Lata</a></li>
                         <li><a href="double-your-profits.html">Growth Program</a></li>
-                        <li><a href="about.html#enroll">Contact Us</a></li>
+                        <li><a href="enroll.html">Contact Us</a></li>
                     </ul>
                 </div>
 

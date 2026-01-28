@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll Now | Bestow India - Suman Lata</title>
+    <meta name="description"
+        content="Enroll in Bestow India's transformative programs. Specialized courses for students and growth strategies for business professionals.">
+
+    <!-- External CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/lp.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+        .enroll-tabs .nav-link {
+            color: #64748b;
+            font-weight: 600;
+            padding: 15px 30px;
+            border: none;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        .enroll-tabs .nav-link.active {
+            color: var(--primary-color) !important;
+            background: transparent !important;
+            border-bottom-color: var(--primary-color) !important;
+        }
+
+        .tab-content {
+            padding: 40px 0;
+        }
+
+        /* Business Tab Styles */
+        .service-box {
+            background: #f8fafc;
+            color: #1a3a6c;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            border-left: 5px solid #1a3a6c;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .service-box.blue-alt {
+            border-left-color: #38bdf8;
+        }
+
+        .service-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .service-box li {
+            margin-bottom: 10px;
+            font-weight: 500;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            padding-bottom: 6px;
+            font-size: 0.85rem;
+        }
+
+        .service-box li:last-child {
+            border-bottom: none;
+        }
+
+        .business-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .business-list li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+            color: #334155;
+            font-weight: 500;
+        }
+
+        .business-list li:before {
+            content: "\f058";
+            font-family: "FontAwesome";
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-size: 1rem;
+        }
+
+        /* Student Tab Styles */
+        .course-badge-icon {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+
+        .info-card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .info-card {
+            background: #f8fafc;
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid #e2e8f0;
+            height: 100%;
+        }
+
+        .info-card h5 {
+            color: var(--primary-color);
+            margin-bottom: 12px;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .info-card p,
+        .info-card li {
+            font-size: 0.85rem;
+        }
+
+        .lp-section-title {
+            font-size: 1.5rem !important;
+            margin-bottom: 20px !important;
+        }
+
+        .table td,
+        .table th {
+            font-size: 0.85rem;
+        }
+
+        .blue-border-box h4,
+        .blue-border-box h6 {
+            font-size: 1rem;
+        }
+
+        .blue-border-box p {
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER PLACEHOLDER -->
+    <div id="header-placeholder"></div>
+
+    <!-- HERO SECTION -->
+    <section class="about-hero py-5" style="background: linear-gradient(135deg, #1a3a6c 0%, #0c1e3a 100%);">
+        <div class="container text-md-center text-start py-5">
+            <h1 class="display-4 fw-bold mb-3 text-white">Enrollment & Programs</h1>
+            <p class="lead text-white opacity-75">Select the program that matches your goals and start your
+                transformation today.</p>
+        </div>
+    </section>
+
+    <!-- TAB SECTION -->
+    <section class="py-5">
+        <div class="container">
+            <ul class="nav nav-tabs enroll-tabs justify-content-center border-0 mb-5" id="enrollTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="business-tab" data-bs-toggle="tab" data-bs-target="#business"
+                        type="button" role="tab">Business & Professionals</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="student-tab" data-bs-toggle="tab" data-bs-target="#student"
+                        type="button" role="tab">Students (Courses)</button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="enrollTabContent">
+                <!-- Tab 1: Business & Professionals -->
+                <div class="tab-pane fade show active" id="business" role="tabpanel">
+                    <div class="row align-items-start">
+                        <div class="col-lg-5" data-aos="fade-right">
+                            <div class="service-box">
+                                <ul class="mb-0">
+                                    <li>Manpower Mapping</li>
+                                    <li>Skills Gap Analyses</li>
+                                    <li>Skills Development Programs</li>
+                                </ul>
+                            </div>
+                            <div class="service-box blue-alt">
+                                <h6 class="fw-bold mb-3">Audits & Compliance:</h6>
+                                <ul class="mb-0 small">
+                                    <li>Statutory / Financial Audits</li>
+                                    <li>Internal & Risk-Based Audits</li>
+                                    <li>Tax & Transfer Pricing Audits</li>
+                                    <li>Regulatory & Compliance Audits</li>
+                                    <li>EHS</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 ps-lg-5" data-aos="fade-left">
+                            <h3 class="fw-bold mb-4" style="color: #25477a;">Our Services</h3>
+                            <h6 class="fw-bold mb-3 text-success" style="font-size: 1.1rem;">People & Business
+                                Development:</h6>
+                            <p class="mb-4 text-muted small">We partner with organizations to coach and support them in:
+                            </p>
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item bg-transparent border-0 px-0 py-2"><i
+                                                class="fa fa-check-circle text-success me-2"></i> Strategy Consulting
+                                        </li>
+                                        <li class="list-group-item bg-transparent border-0 px-0 py-2"><i
+                                                class="fa fa-check-circle text-success me-2"></i> Operations &
+                                            Performance Improvement</li>
+                                        <li class="list-group-item bg-transparent border-0 px-0 py-2"><i
+                                                class="fa fa-check-circle text-success me-2"></i> Organization &
+                                            Leadership Transformation</li>
+                                        <li class="list-group-item bg-transparent border-0 px-0 py-2"><i
+                                                class="fa fa-check-circle text-success me-2"></i> Digital, Technology &
+                                            Analytics</li>
+                                        <li class="list-group-item bg-transparent border-0 px-0 py-2"><i
+                                                class="fa fa-check-circle text-success me-2"></i> Corporate Finance &
+                                            Growth</li>
+                                        <li class="list-group-item bg-transparent border-0 px-0 py-2"><i
+                                                class="fa fa-check-circle text-success me-2"></i> Talent Acquisitions
+                                        </li>
+                                        <li class="list-group-item bg-transparent border-0 px-0 py-2"><i
+                                                class="fa fa-check-circle text-success me-2"></i> Leadership Coaching
+                                        </li>
+                                        <li class="list-group-item bg-transparent border-0 px-0 py-2"><i
+                                                class="fa fa-check-circle text-success me-2"></i> AI-enabled Business
+                                            Solutions</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Students (Courses) -->
+                <div class="tab-pane fade" id="student" role="tabpanel">
+                    <div class="row">
+                        <div class="col-12" data-aos="fade-up">
+                            <div class="blue-border-box mb-5">
+                                <h5 class="fw-bold mb-3">Workshops</h5>
+                                <p>Empowering Professionals and Entrepreneurs with AI-Driven Growth by PEOPLE
+                                    development programs, TEAM development & BUSINESS Growth Programs</p>
+                            </div>
+
+                            <h2 class="lp-section-title">🎯 OUR COURSES: Practical Learning Programs with Certificate.
+                            </h2>
+                            <div class="row g-4 mb-5">
+                                <div class="col-md-4">
+                                    <div class="info-card">
+                                        <h5>🎯 Program Overview</h5>
+                                        <p class="mb-2"><strong>Goal:</strong> Jobs for freshers / career switch /
+                                            upgrade</p>
+                                        <p class="mb-0"><strong>Duration:</strong> 6 months each</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="info-card">
+                                        <h5>📘 Courses Offered</h5>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <ul class="list-unstyled">
+                                                    <li class="mb-2">Course 1: AI Professional for Business & Analytics
+                                                    </li>
+                                                    <li>Course 2: HR Generalist with AI & Payroll</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <ul class="list-unstyled">
+                                                    <li class="mb-2">Course 3: Accounting & Finance with AI</li>
+                                                    <li>Course 3: Sales and Marketing with AI</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info-card-grid mb-5">
+                                <div class="info-card">
+                                    <h5>🎯 Mode of Learning</h5>
+                                    <p class="mb-0">Hybrid OR Offline OR Online (live)<br><small class="text-muted">(All
+                                            three options available)</small></p>
+                                </div>
+                                <div class="info-card">
+                                    <h5>🎯 Who Should Join?</h5>
+                                    <ul class="list-unstyled small mb-0">
+                                        <li>✔ Graduates (Any stream)</li>
+                                        <li>✔ Freshers looking for jobs</li>
+                                        <li>✔ Career switchers</li>
+                                        <li>✔ Working professionals (evening classes available)</li>
+                                    </ul>
+                                </div>
+                                <div class="info-card">
+                                    <h5>🎯 Why Choose Us?</h5>
+                                    <ul class="list-unstyled small mb-0">
+                                        <li>✔ Practical & industry-relevant syllabus</li>
+                                        <li>✔ Beginner-friendly teaching</li>
+                                        <li>✔ AI-enabled learning</li>
+                                        <li>✔ Affordable fees</li>
+                                        <li>✔ Flexible online classes</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="mb-5">
+                                <h5 class="fw-bold mb-3 text-primary">🎯 2 YEARS MBA vs OUR CERTIFICATE COURSE</h5>
+                                <p class="mb-4 small">Why Spend 2 Years When You Can Be Job-Ready in 6 Months. Our
+                                    programs
+                                    follows a B-school learning pattern inspired by premier institutes such as IIMs and
+                                    ISB.</p>
+
+                                <div class="lp-table table-responsive">
+                                    <table class="table table-hover table-bordered mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th>Parameter</th>
+                                                <th>Traditional MBA</th>
+                                                <th>Our Certificate Course</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="fw-bold">Duration and Fees</td>
+                                                <td>2 years, very high</td>
+                                                <td class="fw-bold text-primary">6 months, Very Nominal</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-bold">Learning Focus</td>
+                                                <td>Heavy on theory</td>
+                                                <td class="fw-bold text-primary">100% practical & application-oriented
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-bold">Curriculum Relevance</td>
+                                                <td>Often outdated, academic</td>
+                                                <td class="fw-bold text-primary">Industry-driven & corporate-relevant
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-bold">Practical Exposure</td>
+                                                <td>Limited case studies</td>
+                                                <td class="fw-bold text-primary">Live projects & real corporate
+                                                    scenarios</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-bold">Theory Classes</td>
+                                                <td>Multiple subjects & exams</td>
+                                                <td class="fw-bold text-primary">Only essential theory</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-bold">Personality Development</td>
+                                                <td>Optional / limited</td>
+                                                <td class="fw-bold text-primary">Strong focus on personality,
+                                                    professional behavior and communication</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="mb-5">
+                                <h5 class="fw-bold mb-3 text-primary">🎯 Career Opportunities After Course Completion
+                                </h5>
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <div class="blue-border-box">
+                                            <h6 class="fw-bold">Analytics & AI Roles</h6>
+                                            <p class="small mb-0">1. MIS Analyst | 2. MIS Executives | 3. Business
+                                                Analyst (Entry Level)</p>
+                                        </div>
+                                        <div class="blue-border-box mt-3">
+                                            <h6 class="fw-bold">HR & Talent Management Roles</h6>
+                                            <p class="small mb-0">1. HR Executive | 2. Recruiter | 3. HR Operations | 4.
+                                                Payroll Executive</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="blue-border-box h-100">
+                                            <h6 class="fw-bold">Finance & Accounts Roles</h6>
+                                            <p class="small mb-2">1. Accounts Executive | 2. Finance Executive | 3.
+                                                Financial Analyst</p>
+                                            <p class="small mb-0">4. Credit Analyst | 5. Audit Executive | 6. Tax
+                                                Executive | 7. Banking Officer</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="blue-border-box">
+                                            <h6 class="fw-bold">Sales and Marketing Roles</h6>
+                                            <p class="small mb-0">1. Sales Executive | 2. Marketing Executive | 3.
+                                                Business Development | 4. Key Account Executive | 5. Inside Sales | 6.
+                                                Digital Marketing | 7. Brand Executive</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enrollment Form Trigger / Call to Action -->
+            <div class="mt-5 text-center py-5 border-top" data-aos="fade-up">
+                <h3 class="fw-bold mb-4">Join Our Next Batch!</h3>
+                <p class="mb-4 text-muted">Ready to transform your career or business? Fill out our inquiry form or
+                    contact us directly.</p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="about.html#enroll" class="btn lp-btn lp-btn-primary">Apply Now</a>
+                    <a href="index.html#contact" class="btn lp-btn border-primary text-primary">Contact Support</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER PLACEHOLDER -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/components.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+
+</html>
