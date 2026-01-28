@@ -429,10 +429,10 @@
     width: 100%;
     height: 100vh;
     background: #ffffff;
-    padding: 100px 30px 40px !important;
+    padding: 70px 20px 30px !important; /* Further reduced top padding */
     display: flex !important;
     flex-direction: column;
-    align-items: flex-start !important;
+    align-items: stretch !important;
     justify-content: flex-start;
     transform: translateX(-100%);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -455,32 +455,15 @@
 
   .nav-item {
     width: 100%;
-    margin-bottom: 15px; /* Reduced margin */
+    margin-bottom: 0px; /* Removed margin to close gaps */
     opacity: 0;
-    transform: translateX(-20px);
-    transition: all 0.4s ease;
+    transform: translateY(5px); /* Reduced vertical shift */
+    transition: all 0.3s ease;
   }
 
   .navbar-collapse.show .nav-item {
     opacity: 1;
-    transform: translateX(0);
-  }
-
-  /* Staggered animation for menu items */
-  .navbar-collapse.show .nav-item:nth-child(1) {
-    transition-delay: 0.1s;
-  }
-  .navbar-collapse.show .nav-item:nth-child(2) {
-    transition-delay: 0.2s;
-  }
-  .navbar-collapse.show .nav-item:nth-child(3) {
-    transition-delay: 0.3s;
-  }
-  .navbar-collapse.show .nav-item:nth-child(4) {
-    transition-delay: 0.4s;
-  }
-  .navbar-collapse.show .nav-item:nth-child(5) {
-    transition-delay: 0.5s;
+    transform: translateY(0); /* Changed to translateY(0) for consistency */
   }
 
   .nav-item .nav-link {
@@ -501,18 +484,21 @@
   }
 
   .dropdown-menu {
-    display: none; /* Force hide unless .show is present */
-    background: transparent !important;
+    display: none;
+    background: #f8fafc !important;
     border: none !important;
     box-shadow: none !important;
-    margin: 0 !important;
-    padding: 0 0 10px 15px !important; /* Compact indent */
-    position: relative !important;
-    width: 100%;
+    margin: 5px 0 !important; /* Small margin for clarity */
+    padding: 0 0 10px 20px !important;
+    position: static !important; /* Changed to static to properly push siblings down */
+    float: none !important;
+    width: 100% !important;
     transform: none !important;
     opacity: 1 !important;
     visibility: visible !important;
     transition: none !important;
+    overflow: visible !important;
+    max-height: none !important;
   }
 
   .dropdown-menu.show {
@@ -523,11 +509,18 @@
     color: #444444 !important;
     font-size: 13px !important;
     font-weight: 500 !important;
-    padding: 10px 0 !important;
+    padding: 12px 0 !important;
     text-transform: uppercase !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03) !important;
     background: transparent !important;
     width: 100% !important;
+    display: block;
+  }
+
+  .dropdown-menu .dropdown-divider {
+    margin: 5px 0 !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    opacity: 1 !important;
   }
 
   /* Remove link color override when expanded in mobile to keep it consistent */
@@ -538,17 +531,17 @@
   /* Inquiry Button at Bottom for Mobile */
   .navbar .nav-link.btn-primary {
     margin-left: 0 !important;
-    margin-top: 25px !important;
+    margin-top: 20px !important;
     width: 100% !important;
-    max-width: 200px;
+    max-width: none !important; /* Remove max-width on mobile for full consistency */
     text-align: center;
-    padding: 12px 25px !important;
-    border-radius: 6px !important;
-    font-size: 13px !important;
+    padding: 14px 25px !important;
+    border-radius: 8px !important;
+    font-size: 14px !important;
     font-weight: 700 !important;
-    background: #25477a !important; /* Reverting to original primary blue */
+    background: #25477a !important;
     border: none !important;
-    box-shadow: 0 10px 20px rgba(56, 189, 248, 0.2);
+    box-shadow: 0 10px 20px rgba(37, 71, 122, 0.15);
   }
 
   /* Hamburger to X Animation */
