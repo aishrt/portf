@@ -140,8 +140,20 @@ body {
 
 .lp-table {
   border-radius: 20px;
-  overflow: hidden;
+  overflow-x: auto;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+  -webkit-overflow-scrolling: touch;
+}
+
+.lp-table table {
+  min-width: 700px; /* Ensure table doesn't squash on mobile */
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .lp-table table {
+    min-width: 600px;
+  }
 }
 
 .lp-table thead th {
@@ -161,6 +173,41 @@ body {
   background: rgba(56, 189, 248, 0.05);
   font-weight: 600;
   color: var(--lp-primary);
+}
+
+.blue-border-box {
+  background: #f8fafc;
+  border-left: 4px solid var(--lp-primary);
+  padding: 15px 20px 12px;
+  margin: 10px 0;
+  border-radius: 0 12px 12px 0;
+  transition: all 0.3s ease;
+}
+
+.blue-border-box:hover {
+  background: #f1f5f9;
+  transform: translateX(5px);
+}
+
+.blue-border-box h5,
+.blue-border-box h6 {
+  color: var(--lp-primary);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.blue-border-box ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.blue-border-box li {
+  padding-left: 0;
+  position: relative;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #475569;
 }
 
 .lp-form-container {
@@ -240,7 +287,6 @@ body {
   .container {
     padding-left: 15px !important;
     padding-right: 15px !important;
-    overflow: hidden;
   }
 
   .row {
@@ -256,10 +302,11 @@ body {
   }
 
   .lp-headline {
-    font-size: 1.5rem; /* ~24px */
-    margin-bottom: 0.8rem;
-    color: #ffffff; /* Fallback for older browsers */
-    -webkit-text-fill-color: #ffffff; /* Ensure visibility */
+    font-size: 2rem; /* Increased from 1.5rem for better impact */
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    color: #ffffff;
+    -webkit-text-fill-color: #ffffff;
   }
 
   .lp-headline span {
@@ -272,8 +319,9 @@ body {
   }
 
   .lp-subheadline {
-    font-size: 0.875rem; /* ~14px */
-    margin-bottom: 1.5rem;
+    font-size: 1.1rem; /* Increased from 0.875rem */
+    margin-bottom: 2rem;
+    font-weight: 300;
   }
 
   .lp-hero .d-flex.flex-wrap {
@@ -284,12 +332,16 @@ body {
   }
 
   .lp-btn {
-    padding: 12px 15px !important;
-    font-size: 0.85rem !important;
-    width: auto !important;
-    flex: 1;
-    margin-bottom: 0px !important;
-    white-space: nowrap !important;
+    padding: 12px 20px !important;
+    font-size: 0.9rem !important;
+    width: 100% !important; /* Stack buttons on very small screens for better UX */
+    flex: none !important;
+    margin-bottom: 10px !important;
+  }
+
+  .lp-hero .d-flex.flex-wrap {
+    flex-direction: column !important;
+    align-items: stretch;
   }
 
   .lp-section-title {
@@ -300,6 +352,11 @@ body {
   .lp-section-subtitle {
     font-size: 1rem;
     margin-bottom: 2.5rem;
+  }
+
+  .lp-table tbody td,
+  .lp-table thead th {
+    padding: 12px 10px !important;
   }
 
   .lp-form-container {
