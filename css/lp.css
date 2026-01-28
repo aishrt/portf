@@ -254,7 +254,7 @@ body {
 @media (max-width: 991px) {
   .lp-hero {
     padding: 100px 0 120px;
-    text-align: center;
+    text-align: left;
   }
 
   .lp-headline {
@@ -266,7 +266,7 @@ body {
   }
 
   .lp-hero .d-flex {
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .lp-stat-number {

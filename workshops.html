@@ -250,22 +250,35 @@
         .workshop-content-section {
             max-width: 900px;
             margin: 0 auto;
-            text-align: center;
+            text-align: left;
+            /* Changed from center to left */
             padding: 0 15px;
+        }
+
+        @media (min-width: 769px) {
+            .workshop-content-section {
+                text-align: center;
+                /* Maintain center for desktop */
+            }
         }
 
         /* Responsive */
         @media (max-width: 768px) {
             .workshops-hero {
                 padding: 100px 0 20px;
+                text-align: left;
+                /* Ensure hero text is left-aligned on mobile */
             }
 
             .workshops-hero h1 {
                 font-size: 2.25rem;
+                text-align: left;
             }
 
             .workshops-hero p {
                 font-size: 1.1rem;
+                text-align: left;
+                margin-left: 0;
             }
 
             .workshop-content-section h2 {
@@ -302,7 +315,7 @@
     <section class="workshops-hero pb-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center">
+                <div class="col-12 text-md-center text-start">
                     <h1 data-aos="fade-up">Workshops</h1>
                     <p data-aos="fade-up" data-aos-delay="200">
                         Empowering Professionals and Entrepreneurs with AI-Driven Growth through PEOPLE Development
