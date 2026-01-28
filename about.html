@@ -178,14 +178,14 @@
             }
         }
 
-        .contact-info {
+        .enrollment-section .enroll-contact-info {
             background: white;
             padding: 30px;
             border-radius: 12px;
             border: 1px solid #e2e8f0;
         }
 
-        .contact-item {
+        .enrollment-section .enroll-contact-item {
             display: flex;
             align-items: center;
             margin-bottom: 20px;
@@ -193,24 +193,24 @@
             border-bottom: 1px solid #f1f5f9;
         }
 
-        .contact-item:last-child {
+        .enrollment-section .enroll-contact-item:last-child {
             border-bottom: none;
             margin-bottom: 0;
             padding-bottom: 0;
         }
 
-        .contact-item i {
+        .enrollment-section .enroll-contact-item i {
             font-size: 24px;
             color: var(--primary-color);
             margin-right: 15px;
             width: 30px;
         }
 
-        .contact-item .info {
+        .enrollment-section .enroll-contact-item .info {
             flex: 1;
         }
 
-        .contact-item .label {
+        .enrollment-section .enroll-contact-item .label {
             font-size: 12px;
             color: #64748b;
             text-transform: uppercase;
@@ -218,7 +218,7 @@
             margin-bottom: 4px;
         }
 
-        .contact-item .value {
+        .enrollment-section .enroll-contact-item .value {
             font-size: 16px;
             font-weight: 600;
             color: #0f172a;
@@ -288,6 +288,23 @@
             background: #d63310;
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(241, 58, 17, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .page-container {
+                padding: 30px 15px;
+            }
+
+            .enrollment-section {
+                padding: 25px 15px;
+                border-radius: 12px;
+                margin-top: 40px;
+            }
+
+            .contact-info,
+            .form-container {
+                padding: 20px;
+            }
         }
     </style>
 </head>
@@ -367,22 +384,22 @@
                 future and stay ahead of the curve.</p>
 
             <div class="enrollment-grid">
-                <div class="contact-info">
-                    <div class="contact-item">
+                <div class="enroll-contact-info">
+                    <div class="enroll-contact-item">
                         <i class="fa fa-phone"></i>
                         <div class="info">
                             <div class="label">Call / WhatsApp</div>
                             <div class="value">8950336844</div>
                         </div>
                     </div>
-                    <div class="contact-item">
+                    <div class="enroll-contact-item">
                         <i class="fa fa-globe"></i>
                         <div class="info">
                             <div class="label">Website</div>
                             <div class="value">bestowgroup.com</div>
                         </div>
                     </div>
-                    <div class="contact-item">
+                    <div class="enroll-contact-item">
                         <i class="fa fa-info-circle"></i>
                         <div class="info">
                             <div class="label">Batch Status</div>

@@ -36,7 +36,7 @@ const components = {
                         <a class="nav-link dropdown-toggle" href="#" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             PRACTICAL LEARNING PROGRAMS
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu mobile-dropdown">
                             <li><a class="dropdown-item" href="index.html#courses">AI Professional</a></li>
                           
                             <li><hr class="dropdown-divider mx-3 opacity-10"></li>
@@ -62,7 +62,7 @@ const components = {
             <div class="row">
                 <!-- Company Info -->
                 <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                    <h4 class="mb-4 text-white fw-bold" style="letter-spacing: 1px;">BESTOW <span style="color: #38bdf8;">GROUP</span></h4>
+                    <h4 class="footer-logo-text mb-4">BESTOW <span class="accent-text">India</span></h4>
                     <p class="footer-text">One-Stop Solution Partner and a trusted coach for end-to-end people and business development. We help people and organizations scale sustainably, improve performance, and build future-ready capabilities.</p>
                     <div class="social-icons">
                         <a href="#" class="social-icon-btn"><i class="fa fa-facebook"></i></a>
