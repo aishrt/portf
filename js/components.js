@@ -11,7 +11,7 @@ const components = {
         <div class="container">
 
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" alt="Bestow Group" height="50" id="nav-logo">
+                <img src="images/logo.png" alt="Bestow India" height="50" id="nav-logo">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -86,7 +86,7 @@ const components = {
 
                 <!-- Programs -->
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4 mb-lg-0">
-                    <h5 class="footer-title">Our Programs</h5>
+                    <h5 class="footer-title"> Practical Learning Programs</h5>
                     <ul class="footer-links">
                         <li><a href="double-your-profits.html">AI Professional</a></li>
                         <li><a href="double-your-profits.html">HR Generalist</a></li>
@@ -129,7 +129,7 @@ const components = {
             <div class="row">
                 <div class="col-12">
                     <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
-                        <p class="mb-md-0">&copy; 2026 <strong>Bestow Group</strong>. All Rights Reserved.</p>
+                        <p class="mb-md-0">&copy; 2026 <strong>Bestow India</strong>. All Rights Reserved.</p>
                         <p class="mb-0">Powered by <a href="https://bestowindia.com" target="_blank">Bestow Development India</a></p>
                     </div>
                 </div>
