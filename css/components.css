@@ -375,15 +375,19 @@
 .site-footer .social-icon-btn {
   width: 42px;
   height: 42px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: #f8fafc;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff !important; /* Force pure white */
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
+}
+
+.site-footer .social-icon-btn i {
+  color: #ffffff !important; /* Ensure icon is white */
 }
 
 .site-footer .social-icon-btn:hover {
@@ -397,14 +401,20 @@
 .site-footer .footer-bottom {
   margin-top: 80px;
   padding-top: 35px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 14px;
-  color: #cbd5e1;
+  color: #ffffff !important;
+}
+
+.site-footer .footer-bottom p,
+.site-footer .footer-bottom strong {
+  color: #ffffff !important;
 }
 
 .site-footer .footer-bottom a {
-  color: #38bdf8;
-  text-decoration: none;
+  color: #ffffff !important;
+  text-decoration: underline;
+  opacity: 0.8;
 }
 
 .site-footer .footer-bottom a:hover {
