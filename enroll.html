@@ -26,93 +26,73 @@
             --secondary-color: #38bdf8;
         }
 
-        .enroll-tabs .nav-link {
-            color: #64748b;
-            font-weight: 600;
-            padding: 12px 20px;
-            border: none;
-            border-bottom: 3px solid transparent;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-size: 14px;
-            white-space: nowrap;
-        }
-
-        .enroll-tabs .nav-link.active {
-            color: var(--primary-color) !important;
-            background: transparent !important;
-            border-bottom-color: var(--primary-color) !important;
-        }
-
+        /* Custom Tab Styles - Simple and Reliable */
         .enroll-tabs-wrapper {
             width: 100%;
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
 
-        .enroll-tabs {
+        .custom-tabs-container {
             display: flex;
+            gap: 15px;
             border-bottom: 2px solid #dee2e6;
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            min-width: 100%;
+            padding-bottom: 0;
         }
 
-        .enroll-tabs .nav-item {
+        .custom-tab {
             flex: 1;
-            list-style: none;
-        }
-
-        .enroll-tabs .nav-link {
-            display: block;
-            width: 100%;
-            padding: 12px 20px;
-            background: transparent;
-            border: none;
-            border-bottom: 3px solid transparent;
-            color: #64748b;
-            font-weight: 600;
-            font-size: 14px;
+            padding: 15px 20px;
             text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+            color: #64748b;
             cursor: pointer;
+            border-bottom: 3px solid transparent;
             transition: all 0.3s ease;
             text-transform: uppercase;
             letter-spacing: 0.5px;
+            user-select: none;
         }
 
-        .enroll-tabs .nav-link:hover {
+        .custom-tab:hover {
             color: #1a3a6c;
         }
 
-        .enroll-tabs .nav-link.active {
+        .custom-tab.active {
             color: #1a3a6c;
             border-bottom-color: #1a3a6c;
-            background: transparent;
         }
 
+        /* Mobile Responsive */
         @media (max-width: 768px) {
             .enroll-tabs-wrapper {
-                margin-bottom: 15px;
-                background: #fff;
-                padding: 5px 0;
+                background-color: #f8f9fa;
+                padding: 15px;
+                border-radius: 10px;
+                margin-bottom: 20px;
             }
 
-            .enroll-tabs {
-                border-bottom: 1px solid #dee2e6;
+            .custom-tabs-container {
+                gap: 10px;
+                border-bottom: none;
             }
 
-            .enroll-tabs .nav-item {
-                flex: 1 1 50%;
-            }
-
-            .enroll-tabs .nav-link {
-                padding: 12px 10px;
-                font-size: 13px;
-                text-transform: none;
+            .custom-tab {
+                padding: 14px 10px;
+                font-size: 16px;
+                font-weight: 700;
+                color: #1a3a6c;
+                background-color: #ffffff;
+                border: 2px solid #1a3a6c;
+                border-radius: 8px;
+                text-transform: capitalize;
                 letter-spacing: 0;
+            }
+
+            .custom-tab.active {
+                color: #ffffff;
+                background-color: #1a3a6c;
+                border-color: #1a3a6c;
             }
         }
 
@@ -242,24 +222,17 @@
     </section>
 
     <!-- TAB SECTION -->
-    <section class="py-4" style="background: #ffffff;">
+    <section class="py-4" style="background: #fff;">
         <div class="container">
             <div class="enroll-tabs-wrapper">
-                <ul class="nav nav-tabs enroll-tabs" id="enrollTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="business-tab" data-bs-toggle="tab"
-                            data-bs-target="#business" type="button" role="tab" aria-controls="business"
-                            aria-selected="true">
-                            Business
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="student-tab" data-bs-toggle="tab" data-bs-target="#student"
-                            type="button" role="tab" aria-controls="student" aria-selected="false">
-                            Students
-                        </button>
-                    </li>
-                </ul>
+                <div class="custom-tabs-container">
+                    <div class="custom-tab active" id="business-tab" onclick="switchTab('business')">
+                        Business
+                    </div>
+                    <div class="custom-tab" id="student-tab" onclick="switchTab('student')">
+                        Students
+                    </div>
+                </div>
             </div>
 
             <div class="tab-content" id="enrollTabContent">
@@ -465,6 +438,25 @@
             once: true,
             offset: 100
         });
+
+        // Custom tab switching function
+        function switchTab(tabName) {
+            // Remove active class from all tabs
+            document.querySelectorAll('.custom-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Add active class to clicked tab
+            document.getElementById(tabName + '-tab').classList.add('active');
+
+            // Hide all tab panes
+            document.querySelectorAll('.tab-pane').forEach(pane => {
+                pane.classList.remove('show', 'active');
+            });
+
+            // Show selected tab pane
+            document.getElementById(tabName).classList.add('show', 'active');
+        }
     </script>
 </body>
 
