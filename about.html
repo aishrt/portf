@@ -14,12 +14,32 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600;700;800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600;700;800&family=Roboto:wght@700;900&display=swap"
         rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/components.css">
+
+    <style>
+        .hero-text h1 {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.35 !important;
+            letter-spacing: -0.01em !important;
+            font-weight: 900;
+            margin-bottom: 25px;
+            text-transform: none !important;
+            /* Professional look often avoids all-caps if crowded */
+        }
+
+        @media (max-width: 768px) {
+            .hero-text h1 {
+                font-size: 2.5rem;
+                line-height: 1.3 !important;
+            }
+        }
+    </style>
 </head>
 
 <body dat-spy="scroll" data-target="#navbarNav" data-offset="50">
@@ -35,7 +55,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-7 col-md-12 col-12">
                     <div class="hero-text">
-                        <h1 data-aos="fade-up" data-aos-delay="300" style="line-height: 1.1;">
+                        <h1 data-aos="fade-up" data-aos-delay="300">
                             People Development Leads to <br><span style="color: var(--primary-color);">
                                 Business Success and National Progress.</span>
                         </h1>
