@@ -48,7 +48,7 @@ const components = {
                     </li>
                     
                     <li class="nav-item">
-                        <a href="enroll.html" class="nav-link btn-primary">INQUIRY</a>
+                        <a href="index.html#enroll" class="nav-link btn-primary">INQUIRY</a>
                     </li>
                 </ul>
             </div>
