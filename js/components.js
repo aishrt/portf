@@ -11,7 +11,7 @@ const components = {
         <div class="container">
 
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" alt="Bestow India" height="50" id="nav-logo">
+                <img src="images/logo.png" alt="Bestow India" height="55" id="nav-logo">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
