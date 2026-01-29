@@ -34,7 +34,7 @@ const components = {
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            PRACTICAL LEARNING PROGRAMS
+                            OUR COURSES
                         </a>
                         <ul class="dropdown-menu mobile-dropdown">
                             <li><a class="dropdown-item" href="index.html#courses">AI Professional</a></li>
