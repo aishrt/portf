@@ -23,11 +23,11 @@ const components = {
                 <ul class="navbar-nav ms-auto align-items-lg-center">
            
                      <li class="nav-item">
-                        <a href="INDEX.html" class="nav-link">SUMAN LATA</a>
+                        <a href="INDEX.html" class="nav-link">ABOUT US</a>
                     </li>
                     
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link">ABOUT US</a>
+                        <a href="about.html" class="nav-link">SUMAN LATA</a>
                     </li>
 
                   
