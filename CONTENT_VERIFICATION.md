@@ -133,8 +133,8 @@
 ### Contact Information
 
 - Call / WhatsApp: 8950336844
-- Email: info@bestowgroup.com
-- Website: bestowgroup.com
+- Email: info@businesscoachingindia.com
+- Website: businesscoachingindia.com
 
 ---
 

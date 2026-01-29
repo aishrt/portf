@@ -104,6 +104,7 @@ body {
 }
 
 .lp-section-title {
+  font-family: "Roboto", sans-serif;
   font-size: 1.75rem;
   font-weight: 700;
   color: var(--lp-primary);

@@ -111,14 +111,14 @@ const components = {
                             <i class="fa fa-envelope"></i>
                             <div class="contact-content">
                                 <h6>Email Us</h6>
-                                <p>info@bestowgroup.com</p>
+                                <p>info@businesscoachingindia.com</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="fa fa-globe"></i>
                             <div class="contact-content">
                                 <h6>Our Website</h6>
-                                <p>bestowgroup.com</p>
+                                <p>businesscoachingindia.com</p>
                             </div>
                         </div>
                     </div>

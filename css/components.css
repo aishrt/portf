@@ -254,6 +254,7 @@
 }
 
 .site-footer .footer-logo-text {
+  font-family: "Roboto", sans-serif;
   font-size: 26px;
   font-weight: 800;
   color: #f8fafc;
@@ -283,6 +284,7 @@
 }
 
 .site-footer .footer-title {
+  font-family: "Roboto", sans-serif;
   color: #f8fafc;
   font-size: 19px;
   font-weight: 700;
@@ -354,6 +356,7 @@
 }
 
 .site-footer .contact-content h6 {
+  font-family: "Roboto", sans-serif;
   color: #f1f5f9;
   margin-bottom: 2px;
   font-size: 14px;
