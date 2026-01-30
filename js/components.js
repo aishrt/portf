@@ -22,28 +22,24 @@ const components = {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-lg-center">
            
-                     <li class="nav-item">
-                        <a href="INDEX.html" class="nav-link">SUMAN LATA</a>
-                    </li>
-                    
+                   
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link">ABOUT US</a>
+                        <a href="index.html" class="nav-link">ABOUT US</a>
                     </li>
 
-                                
+                      <li class="nav-item">
+                        <a href="about.html" class="nav-link">SUMAN LATA</a>
+                    </li>      
                     <li class="nav-item">
                         <a  href="double-your-profits.html" class="nav-link"> OUR COURSES</a>
-                    </li>
-
-
-                  
+                    </li>                
                     
                        <li class="nav-item">
                         <a href="workshops.html" class="nav-link">WORKSHOP</a>
                     </li>
                     
                     <li class="nav-item">
-                        <a href="about.html#enroll" class="nav-link btn-primary">INQUIRY</a>
+                        <a href="index.html#enroll" class="nav-link btn-primary">INQUIRY</a>
                     </li>
                 </ul>
             </div>
