@@ -23,32 +23,27 @@ const components = {
                 <ul class="navbar-nav ms-auto align-items-lg-center">
            
                      <li class="nav-item">
-                        <a href="INDEX.html" class="nav-link">ABOUT US</a>
+                        <a href="INDEX.html" class="nav-link">SUMAN LATA</a>
                     </li>
                     
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link">SUMAN LATA</a>
+                        <a href="about.html" class="nav-link">ABOUT US</a>
                     </li>
+
+                                
+                    <li class="nav-item">
+                        <a  href="double-your-profits.html" class="nav-link"> OUR COURSES</a>
+                    </li>
+
 
                   
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            OUR COURSES
-                        </a>
-                        <ul class="dropdown-menu mobile-dropdown">
-                            <li><a class="dropdown-item" href="index.html#courses">AI Professional</a></li>
-                          
-                            <li><hr class="dropdown-divider mx-3 opacity-10"></li>
-                            <li><a class="dropdown-item fw-bold text-danger" href="double-your-profits.html">PROFIT GROWTH 2026</a></li>
-                        </ul>
-                    </li>
+                    
                        <li class="nav-item">
                         <a href="workshops.html" class="nav-link">WORKSHOP</a>
                     </li>
                     
                     <li class="nav-item">
-                        <a href="index.html#enroll" class="nav-link btn-primary">INQUIRY</a>
+                        <a href="about.html#enroll" class="nav-link btn-primary">INQUIRY</a>
                     </li>
                 </ul>
             </div>
