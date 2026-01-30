@@ -35,9 +35,9 @@
 
   --gray-color: #909090;
   --link-color: #404040;
-  --p-color: #444444;
+  --p-color: #000000;
 
-  --base-font-family: "Outfit", sans-serif;
+  --base-font-family: "Inter", sans-serif;
   --font-weight-bold: 700;
   --font-weight-normal: 400;
   --font-weight-light: 300;
@@ -49,7 +49,7 @@
   --h4-font-size: 26px;
   --h5-font-size: 24px;
   --h6-font-size: 22px;
-  --p-font-size: 18px;
+  --p-font-size: 20px;
   --base-font-size: 16px;
   --menu-font-size: 14px;
 
@@ -77,18 +77,18 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: var(--font-weight-bold);
   line-height: normal;
 }
 
 h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: var(--h2-font-size);
   font-weight: 900;
   line-height: 1.3;
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  text-transform: none;
   margin: 20px 0;
 }
 
@@ -134,7 +134,7 @@ strong {
 }
 
 .section {
-  padding: 7rem 0;
+  padding: 4.5rem 0;
 }
 
 /* BUTTON */
@@ -255,7 +255,7 @@ a:focus {
 /* HERO ENHANCEMENTS */
 .hero {
   position: relative;
-  padding: 160px 0 100px;
+  padding: 140px 0 60px;
   background: #ffffff;
   overflow: hidden;
 }
@@ -579,7 +579,8 @@ a:focus {
 }
 
 .navbar-toggler:focus {
-  outline: none;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
@@ -1109,4 +1110,12 @@ button#submit-button:hover {
 
 .shadow-2xl {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 0 !important;
+  }
+  .hero {
+    padding: 80px 0 40px !important;
+  }
 }

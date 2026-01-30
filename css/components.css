@@ -4,12 +4,12 @@
   --white-color: #ffffff;
   --dark-color: #171819;
   --menu-font-size: 13px;
-  --p-color: #444444;
+  --p-color: #000000;
   --base-font-size: 16px;
   --font-weight-bold: 700;
   --font-weight-light: 300;
   --h3-font-size: 24px;
-  --base-font-family: "Outfit", sans-serif;
+  --base-font-family: "Inter", sans-serif;
 }
 
 .navbar {
@@ -57,7 +57,7 @@
 .navbar a {
   display: block;
   color: #171819 !important; /* Force dark color */
-  font-family: "Outfit", sans-serif !important;
+  font-family: "Inter", sans-serif !important;
   font-size: 13px !important;
   font-weight: 500 !important;
   text-transform: uppercase !important;
@@ -154,7 +154,7 @@
   font-weight: 500;
   text-transform: uppercase;
   padding: 8px 25px;
-  color: #475569 !important;
+  color: #000000 !important;
   transition: all 0.2s ease;
 }
 
@@ -175,7 +175,8 @@
 }
 
 .navbar-toggler:focus {
-  outline: none;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
@@ -249,12 +250,12 @@
   background: radial-gradient(circle at 0% 0%, #161e31 0%, #0a0f1d 100%);
   padding: 100px 0 40px;
   color: #ffffff;
-  font-family: "Outfit", sans-serif;
+  font-family: "Inter", sans-serif;
   position: relative;
 }
 
 .site-footer .footer-logo-text {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 26px;
   font-weight: 800;
   color: #ffffff;
@@ -284,7 +285,7 @@
 }
 
 .site-footer .footer-title {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #ffffff;
   font-size: 19px;
   font-weight: 700;
@@ -356,7 +357,7 @@
 }
 
 .site-footer .contact-content h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #ffffff;
   margin-bottom: 2px;
   font-size: 14px;
