@@ -96,9 +96,45 @@
         .hero-image-wrapper img {
             max-width: 320px;
             border-radius: 20px;
-            /* Integrating with background - simpler approach */
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+            /* Smoother shadow */
             transition: all 0.3s ease;
+        }
+
+        .about-intro-text {
+            font-size: 1.15rem;
+            line-height: 1.7;
+            color: #1e293b;
+            font-weight: 500;
+            margin-bottom: 30px;
+            border-left: 4px solid #2563eb;
+            padding-left: 20px;
+        }
+
+        .section-accent-title {
+            position: relative;
+            padding-bottom: 12px;
+            margin-bottom: 25px;
+            font-weight: 800;
+            color: #1e293b;
+        }
+
+        .section-accent-title::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 4px;
+            background: #2563eb;
+            border-radius: 2px;
+        }
+
+        .about p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #475569;
+            margin-bottom: 20px;
         }
 
 
@@ -150,12 +186,10 @@
             <div class="row align-items-center">
                 <div class="col-lg-7 col-md-12 col-12">
                     <div class="hero-text">
+
                         <h1 data-aos="fade-right" data-aos-delay="300">
                             People Development Leads to <span>Business Success and Progress.</span>
                         </h1>
-                        <div class="signature-name" data-aos="fade-up" data-aos-delay="500">
-                            SUMAN LATA
-                        </div>
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-12 col-12" data-aos="fade-left" data-aos-delay="400">
@@ -167,11 +201,11 @@
 
             <div class="row">
                 <div class="col-lg-12 col-12">
-                    <h2 class="mb-4" data-aos="fade-up" data-aos-delay="100">About Suman Lata</h2>
-                    <p data-aos="fade-up" data-aos-delay="200">
+                    <h2 class="section-accent-title" data-aos="fade-up" data-aos-delay="100">About Suman Lata</h2>
+                    <p class="about-intro-text" data-aos="fade-up" data-aos-delay="200">
                         Suman Lata is a seasoned People Development Coach, who believes deeply in <strong>
                             people—people
-                            and people</strong>, because people have the power to break you or make you. She strongly
+                        </strong>, because people have the power to break you or make you. She strongly
                         believes that
                         individuals are the true strength. She believes that every individual has a unique personality
                         that can be developed positively through the right coaching and self-discovery at the right
@@ -201,8 +235,9 @@
                     </p>
                 </div>
 
-                <div class="col-lg-12 col-12 ">
-                    <h3 class="mb-3" data-aos="fade-up" data-aos-delay="500">Previous Experience</h3>
+                <div class="col-lg-12 col-12">
+                    <h3 class="section-accent-title mt-4" data-aos="fade-up" data-aos-delay="500">Previous Experience
+                    </h3>
                     <p data-aos="fade-up" data-aos-delay="600">
                         With a wide range of experience across diverse industries and sectors, Suman Lata has worked
                         with organizations ranging from small enterprises to large corporations with up to 10,000
