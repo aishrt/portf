@@ -961,13 +961,24 @@ button#submit-button:hover {
 }
 
 @media screen and (max-width: 767px) {
-  h1,
+  h1 {
+    font-size: 28px;
+  }
+
   h2 {
-    font-size: 25px;
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 20px;
   }
 
   p {
-    font-size: 16px;
+    font-size: 13px;
   }
 
   .about-working-hours {

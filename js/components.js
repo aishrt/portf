@@ -102,15 +102,22 @@ const components = {
                             <i class="fa fa-envelope"></i>
                             <div class="contact-content">
                                 <h6>Email Us</h6>
-                                <p>info@businesscoachingindia.com</p>
+                                <p>info@bestowindia.com</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="fa fa-globe"></i>
                             <div class="contact-content">
                                 <h6>Our Website</h6>
-                                <p>businesscoachingindia.com</p>
-                            </div>
+                                <p>www.bestowindia.com</p>
+                            </div></div>
+                        <div class="contact-item">
+                            <i class="fa fa-globe"></i>
+                            <div class="contact-content">
+                                <h6>Our Address</h6>
+                                <p>Unit No: 113, BRB building, railway road Gurguram -122001</p>
+                          
+
                         </div>
                     </div>
                 </div>
@@ -121,7 +128,7 @@ const components = {
                 <div class="col-12">
                     <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
                         <p class="mb-md-0">&copy; 2026 <strong>Bestow India</strong>. All Rights Reserved.</p>
-                        <p class="mb-0">Powered by <a href="https://bestowindia.com" target="_blank">Bestow Development India</a></p>
+                        <p class="mb-0">Powered by <a href="https://bestowindia.com" target="_blank">Bestow India</a></p>
                     </div>
                 </div>
             </div>

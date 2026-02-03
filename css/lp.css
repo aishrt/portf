@@ -284,7 +284,7 @@ body {
 
 @media (max-width: 767px) {
   .lp-hero {
-    padding: 120px 0 80px; /* Increased top padding to clear fixed navbar */
+    padding: 140px 0 80px; /* Increased top padding to clear fixed navbar */
   }
 
   .container {
@@ -303,27 +303,31 @@ body {
   }
 
   .lp-headline {
-    font-size: 2rem;
+    font-size: 1.75rem;
     margin-bottom: 1rem;
     line-height: 1.2;
     color: #ffffff;
   }
 
   .lp-subheadline {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     margin-bottom: 2rem;
     font-weight: 300;
   }
 
   .lp-section-title {
-    font-size: 1.3rem !important;
+    font-size: 1.25rem !important;
     margin-bottom: 0.75rem !important;
     line-height: 1.25 !important;
     text-align: left !important;
   }
 
+  p {
+    font-size: 13px !important;
+  }
+
   .lp-section-subtitle {
-    font-size: 0.95rem !important;
+    font-size: 13px !important;
     margin-bottom: 1.5rem !important;
     color: #475569 !important;
     text-align: left !important;
@@ -340,7 +344,7 @@ body {
   }
 
   .blue-border-box ul li {
-    font-size: 0.92rem !important;
+    font-size: 13px !important;
     margin-bottom: 12px !important;
     display: flex !important;
     align-items: flex-start !important;
@@ -376,7 +380,26 @@ body {
   }
 
   .lp-form-container {
-    padding: 1.5rem;
+    padding: 1.25rem;
+    border-radius: 20px;
+  }
+
+  .lp-form-control {
+    padding: 10px 15px !important;
+    font-size: 13px !important;
+    margin-bottom: 0.75rem !important;
+    border-radius: 8px !important;
+  }
+
+  .form-label {
+    font-size: 13px !important;
+    margin-bottom: 5px !important;
+  }
+
+  .lp-btn {
+    padding: 10px 15px !important;
+    font-size: 13px !important;
+    border-radius: 8px !important;
   }
 
   .lp-hero img {
@@ -396,10 +419,10 @@ body {
 
 @media (max-width: 480px) {
   .lp-headline {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .lp-subheadline {
-    font-size: 0.85rem;
+    font-size: 0.875rem;
   }
 }
